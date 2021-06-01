@@ -1,0 +1,9 @@
+export enum LayerOrder {
+  BACKGROUND,
+  MAP_TILES,
+  MAP_DECORATIONS,
+  COINS,
+  CHARACTERS,
+  PROJECTILES,
+  MESSAGES,
+}
