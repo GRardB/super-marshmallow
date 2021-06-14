@@ -17,6 +17,7 @@ const SMOKE_ROTATE_DURATION = 1 * 1000
 const MISSILE_SPEED = 4 * MAP_TILE_SIZE
 const MISSILE_OFFSET_X = -0.75 * MAP_TILE_SIZE
 const MISSILE_OFFSET_Y = -0.5 * MAP_TILE_SIZE - 2
+const SCORE_VALUE = 80
 
 export class Tank extends Phaser.GameObjects.Container implements Killable {
   public body: Phaser.Physics.Arcade.Body
@@ -53,6 +54,8 @@ export class Tank extends Phaser.GameObjects.Container implements Killable {
       this.move()
     }
   }
+
+  public getScoreValue = () => SCORE_VALUE
 
   public follow = (target: Phaser.GameObjects.Container) => {
     this.target = target

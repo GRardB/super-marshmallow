@@ -12,6 +12,8 @@ import { handleMissilePlayerCollision } from './missile-player'
 import { handleCannonBallPlayerCollision } from './cannon-ball-player'
 import { handleMoveablePlatformPlayerCollision } from './moveable-platform-player'
 import { Squash } from '../entities/enemies'
+import { GameState } from '../globals/GameState'
+import { handlePlayerOutOfBounds } from './bounds-player'
 
 interface CollidableGameObjects {
   backgroundPlatforms: Phaser.Physics.Arcade.StaticGroup
@@ -21,6 +23,7 @@ interface CollidableGameObjects {
   despawnZone: Phaser.Physics.Arcade.StaticGroup
   enemies: Phaser.GameObjects.Group
   enemyLedgeColliders: Phaser.Physics.Arcade.StaticGroup
+  gameState: GameState
   ground: Phaser.Tilemaps.TilemapLayer
   missiles: Phaser.Physics.Arcade.Group
   moveablePlatforms: Phaser.Physics.Arcade.StaticGroup
@@ -37,6 +40,7 @@ export const createColliders = (
     despawnZone,
     enemies,
     enemyLedgeColliders,
+    gameState,
     ground,
     missiles,
     moveablePlatforms,
@@ -56,7 +60,7 @@ export const createColliders = (
     player,
     moveablePlatforms,
     // @ts-ignore
-    handleMoveablePlatformPlayerCollision.bind(null, enemies),
+    handleMoveablePlatformPlayerCollision.bind(null, gameState, enemies),
   )
 
   scene.physics.add.collider(
@@ -70,10 +74,24 @@ export const createColliders = (
   scene.physics.add.collider(missiles, player, handleMissilePlayerCollision)
 
   // @ts-ignore
-  scene.physics.add.overlap(coins, player, handleCoinPlayerCollision)
+  scene.physics.add.overlap(
+    coins,
+    player,
+    handleCoinPlayerCollision.bind(null, gameState),
+  )
 
   // @ts-ignore
-  scene.physics.add.overlap(enemies, player, handleEnemyPlayerCollision)
+  scene.physics.add.overlap(
+    enemies,
+    player,
+    handleEnemyPlayerCollision.bind(null, gameState),
+  )
+
+  scene.physics.world.on('worldbounds', (body, _up, down, _left, _right) => {
+    if (body === player.body) {
+      handlePlayerOutOfBounds(gameState, player, down)
+    }
+  })
 
   const tanks = scene.add.group(
     enemies.getChildren().filter((enemy) => enemy instanceof Tank),

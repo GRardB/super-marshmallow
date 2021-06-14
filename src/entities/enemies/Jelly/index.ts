@@ -8,6 +8,7 @@ import { Direction } from '../../../types/Direction'
 
 const WALK_SPEED = MAP_TILE_SIZE
 const JUMP_SPEED = 50
+const SCORE_VALUE = 10
 
 export class Jelly extends Phaser.GameObjects.Container implements Killable {
   public body: Phaser.Physics.Arcade.Body
@@ -38,6 +39,8 @@ export class Jelly extends Phaser.GameObjects.Container implements Killable {
       this.walk(Direction.LEFT)
     }
   }
+
+  public getScoreValue = () => SCORE_VALUE
 
   private walk = (direction: Direction) => {
     const isWalkingRight = direction === Direction.RIGHT

@@ -8,6 +8,7 @@ import { Killable } from '../../Killable'
 const JUMP_SPEED = 50
 const STEP_SPEED = 2 * MAP_TILE_SIZE
 const MOVEMENT_INTERVAL = 1.5 * 1000
+const SCORE_VALUE = 10
 
 export class Soldier extends Phaser.GameObjects.Container implements Killable {
   public body: Phaser.Physics.Arcade.Body
@@ -37,6 +38,8 @@ export class Soldier extends Phaser.GameObjects.Container implements Killable {
       this.sprite.play(SoldierAnimation.SOLDIER_STAND, true)
     }
   }
+
+  public getScoreValue = () => SCORE_VALUE
 
   public die = () => {
     this.isDead = true

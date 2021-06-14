@@ -163,7 +163,7 @@
             <key>scaleMode</key>
             <enum type="ScaleMode">Smooth</enum>
             <key>extrude</key>
-            <uint>1</uint>
+            <uint>0</uint>
             <key>trimThreshold</key>
             <uint>1</uint>
             <key>trimMargin</key>
@@ -181,6 +181,170 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
+            <key type="filename">sprites/entities/bub-black-asleep-1.png</key>
+            <key type="filename">sprites/entities/bub-black-awake-1.png</key>
+            <key type="filename">sprites/entities/bub-black-awake-2.png</key>
+            <key type="filename">sprites/entities/bub-black-die.png</key>
+            <key type="filename">sprites/entities/bub-black-walk-1.png</key>
+            <key type="filename">sprites/entities/bub-black-walk-2.png</key>
+            <key type="filename">sprites/entities/bub-black-walk-3.png</key>
+            <key type="filename">sprites/entities/bub-black-walk-4.png</key>
+            <key type="filename">sprites/entities/bub-black-walk-5.png</key>
+            <key type="filename">sprites/entities/bub-black-walk-6.png</key>
+            <key type="filename">sprites/entities/bub-blue-1-asleep.png</key>
+            <key type="filename">sprites/entities/bub-blue-1-awake-1.png</key>
+            <key type="filename">sprites/entities/bub-blue-1-awake-2.png</key>
+            <key type="filename">sprites/entities/bub-blue-1-die.png</key>
+            <key type="filename">sprites/entities/bub-blue-1-walk-1.png</key>
+            <key type="filename">sprites/entities/bub-blue-1-walk-2.png</key>
+            <key type="filename">sprites/entities/bub-blue-1-walk-3.png</key>
+            <key type="filename">sprites/entities/bub-blue-1-walk-4.png</key>
+            <key type="filename">sprites/entities/bub-blue-1-walk-5.png</key>
+            <key type="filename">sprites/entities/bub-blue-1-walk-6.png</key>
+            <key type="filename">sprites/entities/bub-blue-2-asleep.png</key>
+            <key type="filename">sprites/entities/bub-blue-2-awake-1.png</key>
+            <key type="filename">sprites/entities/bub-blue-2-awake-2.png</key>
+            <key type="filename">sprites/entities/bub-blue-2-die.png</key>
+            <key type="filename">sprites/entities/bub-blue-2-walk-1.png</key>
+            <key type="filename">sprites/entities/bub-blue-2-walk-2.png</key>
+            <key type="filename">sprites/entities/bub-blue-2-walk-3.png</key>
+            <key type="filename">sprites/entities/bub-blue-2-walk-4.png</key>
+            <key type="filename">sprites/entities/bub-blue-2-walk-5.png</key>
+            <key type="filename">sprites/entities/bub-blue-2-walk-6.png</key>
+            <key type="filename">sprites/entities/bub-brown-asleep.png</key>
+            <key type="filename">sprites/entities/bub-brown-awake-1.png</key>
+            <key type="filename">sprites/entities/bub-brown-awake-2.png</key>
+            <key type="filename">sprites/entities/bub-brown-die.png</key>
+            <key type="filename">sprites/entities/bub-brown-walk-1.png</key>
+            <key type="filename">sprites/entities/bub-brown-walk-2.png</key>
+            <key type="filename">sprites/entities/bub-brown-walk-3.png</key>
+            <key type="filename">sprites/entities/bub-brown-walk-4.png</key>
+            <key type="filename">sprites/entities/bub-brown-walk-5.png</key>
+            <key type="filename">sprites/entities/bub-brown-walk-6.png</key>
+            <key type="filename">sprites/entities/bub-chef-asleep.png</key>
+            <key type="filename">sprites/entities/bub-chef-awake-1.png</key>
+            <key type="filename">sprites/entities/bub-chef-awake-2.png</key>
+            <key type="filename">sprites/entities/bub-chef-die.png</key>
+            <key type="filename">sprites/entities/bub-chef-walk-1.png</key>
+            <key type="filename">sprites/entities/bub-chef-walk-2.png</key>
+            <key type="filename">sprites/entities/bub-chef-walk-3.png</key>
+            <key type="filename">sprites/entities/bub-chef-walk-4.png</key>
+            <key type="filename">sprites/entities/bub-chef-walk-5.png</key>
+            <key type="filename">sprites/entities/bub-chef-walk-6.png</key>
+            <key type="filename">sprites/entities/bub-cop-asleep.png</key>
+            <key type="filename">sprites/entities/bub-cop-awake.png</key>
+            <key type="filename">sprites/entities/bub-cop-die.png</key>
+            <key type="filename">sprites/entities/bub-cop-walk-1.png</key>
+            <key type="filename">sprites/entities/bub-cop-walk-2.png</key>
+            <key type="filename">sprites/entities/bub-cop-walk-3.png</key>
+            <key type="filename">sprites/entities/bub-cop-walk-4.png</key>
+            <key type="filename">sprites/entities/bub-cop-walk-5.png</key>
+            <key type="filename">sprites/entities/bub-cop-walk-6.png</key>
+            <key type="filename">sprites/entities/bub-farmer-asleep.png</key>
+            <key type="filename">sprites/entities/bub-farmer-awake-1.png</key>
+            <key type="filename">sprites/entities/bub-farmer-awake-2.png</key>
+            <key type="filename">sprites/entities/bub-farmer-die.png</key>
+            <key type="filename">sprites/entities/bub-farmer-walk-1.png</key>
+            <key type="filename">sprites/entities/bub-farmer-walk-2.png</key>
+            <key type="filename">sprites/entities/bub-farmer-walk-3.png</key>
+            <key type="filename">sprites/entities/bub-farmer-walk-4.png</key>
+            <key type="filename">sprites/entities/bub-farmer-walk-5.png</key>
+            <key type="filename">sprites/entities/bub-farmer-walk-6.png</key>
+            <key type="filename">sprites/entities/bub-green-asleep.png</key>
+            <key type="filename">sprites/entities/bub-green-awake-1.png</key>
+            <key type="filename">sprites/entities/bub-green-awake-2.png</key>
+            <key type="filename">sprites/entities/bub-green-die.png</key>
+            <key type="filename">sprites/entities/bub-green-walk-1.png</key>
+            <key type="filename">sprites/entities/bub-green-walk-2.png</key>
+            <key type="filename">sprites/entities/bub-green-walk-3.png</key>
+            <key type="filename">sprites/entities/bub-green-walk-4.png</key>
+            <key type="filename">sprites/entities/bub-green-walk-5.png</key>
+            <key type="filename">sprites/entities/bub-green-walk-6.png</key>
+            <key type="filename">sprites/entities/bub-nurse-asleep.png</key>
+            <key type="filename">sprites/entities/bub-nurse-awake-1.png</key>
+            <key type="filename">sprites/entities/bub-nurse-awake-2.png</key>
+            <key type="filename">sprites/entities/bub-nurse-die.png</key>
+            <key type="filename">sprites/entities/bub-nurse-walk-1.png</key>
+            <key type="filename">sprites/entities/bub-nurse-walk-2.png</key>
+            <key type="filename">sprites/entities/bub-nurse-walk-3.png</key>
+            <key type="filename">sprites/entities/bub-nurse-walk-4.png</key>
+            <key type="filename">sprites/entities/bub-nurse-walk-5.png</key>
+            <key type="filename">sprites/entities/bub-nurse-walk-6.png</key>
+            <key type="filename">sprites/entities/bub-winter-asleep.png</key>
+            <key type="filename">sprites/entities/bub-winter-awake-1.png</key>
+            <key type="filename">sprites/entities/bub-winter-awake-2.png</key>
+            <key type="filename">sprites/entities/bub-winter-die.png</key>
+            <key type="filename">sprites/entities/bub-winter-walk-1.png</key>
+            <key type="filename">sprites/entities/bub-winter-walk-2.png</key>
+            <key type="filename">sprites/entities/bub-winter-walk-3.png</key>
+            <key type="filename">sprites/entities/bub-winter-walk-4.png</key>
+            <key type="filename">sprites/entities/bub-winter-walk-5.png</key>
+            <key type="filename">sprites/entities/bub-winter-walk-6.png</key>
+            <key type="filename">sprites/entities/cat-asleep.png</key>
+            <key type="filename">sprites/entities/cat-awake.png</key>
+            <key type="filename">sprites/entities/cat-jump.png</key>
+            <key type="filename">sprites/entities/cat-sushi-chef-jump.png</key>
+            <key type="filename">sprites/entities/cat-sushi-chef-slice-1.png</key>
+            <key type="filename">sprites/entities/cat-sushi-chef-slice-2.png</key>
+            <key type="filename">sprites/entities/cat-sushi-chef-slice-3.png</key>
+            <key type="filename">sprites/entities/cat-sushi-chef-slice-4.png</key>
+            <key type="filename">sprites/entities/cat-sushi-chef-stand.png</key>
+            <key type="filename">sprites/entities/cat-sushi-chef-walk-1.png</key>
+            <key type="filename">sprites/entities/cat-sushi-chef-walk-2.png</key>
+            <key type="filename">sprites/entities/cat-sushi-chef-walk-3.png</key>
+            <key type="filename">sprites/entities/cat-sushi-chef-walk-4.png</key>
+            <key type="filename">sprites/entities/cat-walk-1.png</key>
+            <key type="filename">sprites/entities/cat-walk-2.png</key>
+            <key type="filename">sprites/entities/cat-walk-3.png</key>
+            <key type="filename">sprites/entities/cat-walk-4.png</key>
+            <key type="filename">sprites/entities/man-bald-stand.png</key>
+            <key type="filename">sprites/entities/man-bald-walk-1.png</key>
+            <key type="filename">sprites/entities/man-bald-walk-2.png</key>
+            <key type="filename">sprites/entities/man-bald-walk-3.png</key>
+            <key type="filename">sprites/entities/man-bald-walk-4.png</key>
+            <key type="filename">sprites/entities/man-cop-shoot.png</key>
+            <key type="filename">sprites/entities/man-cop-stand.png</key>
+            <key type="filename">sprites/entities/man-cop-walk-1.png</key>
+            <key type="filename">sprites/entities/man-cop-walk-2.png</key>
+            <key type="filename">sprites/entities/man-cop-walk-3.png</key>
+            <key type="filename">sprites/entities/man-cop-walk-4.png</key>
+            <key type="filename">sprites/entities/man-mustache-1-stand.png</key>
+            <key type="filename">sprites/entities/man-mustache-1-walk-1.png</key>
+            <key type="filename">sprites/entities/man-mustache-1-walk-2.png</key>
+            <key type="filename">sprites/entities/man-mustache-1-walk-3.png</key>
+            <key type="filename">sprites/entities/man-mustache-1-walk-4.png</key>
+            <key type="filename">sprites/entities/man-mustache-2-stand.png</key>
+            <key type="filename">sprites/entities/man-mustache-walk-1.png</key>
+            <key type="filename">sprites/entities/man-mustache-walk-2.png</key>
+            <key type="filename">sprites/entities/man-mustache-walk-3.png</key>
+            <key type="filename">sprites/entities/man-mustache-walk-4.png</key>
+            <key type="filename">sprites/entities/woman-asleep.png</key>
+            <key type="filename">sprites/entities/woman-awake.png</key>
+            <key type="filename">sprites/entities/woman-nurse-asleep.png</key>
+            <key type="filename">sprites/entities/woman-nurse-clipboard-hold.png</key>
+            <key type="filename">sprites/entities/woman-nurse-clipboard-look.png</key>
+            <key type="filename">sprites/entities/woman-nurse-stand.png</key>
+            <key type="filename">sprites/entities/woman-nurse-talk.png</key>
+            <key type="filename">sprites/entities/woman-nurse-walk-1.png</key>
+            <key type="filename">sprites/entities/woman-nurse-walk-2.png</key>
+            <key type="filename">sprites/entities/woman-nurse-walk-3.png</key>
+            <key type="filename">sprites/entities/woman-walk-1.png</key>
+            <key type="filename">sprites/entities/woman-walk-2.png</key>
+            <key type="filename">sprites/entities/woman-walk-3.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>8,8,16,16</rect>
+                <key>scale9Paddings</key>
+                <rect>8,8,16,16</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">sprites/entities/cactus-die.png</key>
             <key type="filename">sprites/entities/cactus-top.png</key>
             <struct type="IndividualSpriteSettings">
@@ -490,6 +654,21 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
+            <key type="filename">sprites/entities/sign.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>4,4,7,7</rect>
+                <key>scale9Paddings</key>
+                <rect>4,4,7,7</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">sprites/entities/smoke-1.png</key>
             <key type="filename">sprites/entities/smoke-2.png</key>
             <key type="filename">sprites/entities/smoke-3.png</key>
@@ -610,6 +789,157 @@
             <filename>sprites/entities/stars-3.png</filename>
             <filename>sprites/entities/stars-4.png</filename>
             <filename>sprites/entities/cactus-full-walk-2.png</filename>
+            <filename>sprites/entities/sign.png</filename>
+            <filename>sprites/entities/bub-black-asleep-1.png</filename>
+            <filename>sprites/entities/bub-black-awake-1.png</filename>
+            <filename>sprites/entities/bub-black-awake-2.png</filename>
+            <filename>sprites/entities/bub-black-die.png</filename>
+            <filename>sprites/entities/bub-black-walk-1.png</filename>
+            <filename>sprites/entities/bub-black-walk-2.png</filename>
+            <filename>sprites/entities/bub-black-walk-3.png</filename>
+            <filename>sprites/entities/bub-black-walk-4.png</filename>
+            <filename>sprites/entities/bub-black-walk-5.png</filename>
+            <filename>sprites/entities/bub-black-walk-6.png</filename>
+            <filename>sprites/entities/bub-blue-1-asleep.png</filename>
+            <filename>sprites/entities/bub-blue-1-awake-1.png</filename>
+            <filename>sprites/entities/bub-blue-1-awake-2.png</filename>
+            <filename>sprites/entities/bub-blue-1-die.png</filename>
+            <filename>sprites/entities/bub-blue-1-walk-1.png</filename>
+            <filename>sprites/entities/bub-blue-1-walk-2.png</filename>
+            <filename>sprites/entities/bub-blue-1-walk-3.png</filename>
+            <filename>sprites/entities/bub-blue-1-walk-4.png</filename>
+            <filename>sprites/entities/bub-blue-1-walk-5.png</filename>
+            <filename>sprites/entities/bub-blue-1-walk-6.png</filename>
+            <filename>sprites/entities/bub-blue-2-asleep.png</filename>
+            <filename>sprites/entities/bub-blue-2-awake-1.png</filename>
+            <filename>sprites/entities/bub-blue-2-awake-2.png</filename>
+            <filename>sprites/entities/bub-blue-2-die.png</filename>
+            <filename>sprites/entities/bub-blue-2-walk-1.png</filename>
+            <filename>sprites/entities/bub-blue-2-walk-2.png</filename>
+            <filename>sprites/entities/bub-blue-2-walk-3.png</filename>
+            <filename>sprites/entities/bub-blue-2-walk-4.png</filename>
+            <filename>sprites/entities/bub-blue-2-walk-5.png</filename>
+            <filename>sprites/entities/bub-blue-2-walk-6.png</filename>
+            <filename>sprites/entities/bub-brown-asleep.png</filename>
+            <filename>sprites/entities/bub-brown-awake-1.png</filename>
+            <filename>sprites/entities/bub-brown-awake-2.png</filename>
+            <filename>sprites/entities/bub-brown-die.png</filename>
+            <filename>sprites/entities/bub-brown-walk-1.png</filename>
+            <filename>sprites/entities/bub-brown-walk-2.png</filename>
+            <filename>sprites/entities/bub-brown-walk-3.png</filename>
+            <filename>sprites/entities/bub-brown-walk-4.png</filename>
+            <filename>sprites/entities/bub-brown-walk-5.png</filename>
+            <filename>sprites/entities/bub-brown-walk-6.png</filename>
+            <filename>sprites/entities/bub-chef-asleep.png</filename>
+            <filename>sprites/entities/bub-chef-awake-1.png</filename>
+            <filename>sprites/entities/bub-chef-awake-2.png</filename>
+            <filename>sprites/entities/bub-chef-die.png</filename>
+            <filename>sprites/entities/bub-chef-walk-1.png</filename>
+            <filename>sprites/entities/bub-chef-walk-2.png</filename>
+            <filename>sprites/entities/bub-chef-walk-3.png</filename>
+            <filename>sprites/entities/bub-chef-walk-4.png</filename>
+            <filename>sprites/entities/bub-chef-walk-5.png</filename>
+            <filename>sprites/entities/bub-chef-walk-6.png</filename>
+            <filename>sprites/entities/bub-cop-asleep.png</filename>
+            <filename>sprites/entities/bub-cop-awake.png</filename>
+            <filename>sprites/entities/bub-cop-die.png</filename>
+            <filename>sprites/entities/bub-cop-walk-1.png</filename>
+            <filename>sprites/entities/bub-cop-walk-2.png</filename>
+            <filename>sprites/entities/bub-cop-walk-3.png</filename>
+            <filename>sprites/entities/bub-cop-walk-4.png</filename>
+            <filename>sprites/entities/bub-cop-walk-5.png</filename>
+            <filename>sprites/entities/bub-cop-walk-6.png</filename>
+            <filename>sprites/entities/bub-farmer-asleep.png</filename>
+            <filename>sprites/entities/bub-farmer-awake-1.png</filename>
+            <filename>sprites/entities/bub-farmer-awake-2.png</filename>
+            <filename>sprites/entities/bub-farmer-die.png</filename>
+            <filename>sprites/entities/bub-farmer-walk-1.png</filename>
+            <filename>sprites/entities/bub-farmer-walk-2.png</filename>
+            <filename>sprites/entities/bub-farmer-walk-3.png</filename>
+            <filename>sprites/entities/bub-farmer-walk-4.png</filename>
+            <filename>sprites/entities/bub-farmer-walk-5.png</filename>
+            <filename>sprites/entities/bub-farmer-walk-6.png</filename>
+            <filename>sprites/entities/bub-green-asleep.png</filename>
+            <filename>sprites/entities/bub-green-awake-1.png</filename>
+            <filename>sprites/entities/bub-green-awake-2.png</filename>
+            <filename>sprites/entities/bub-green-die.png</filename>
+            <filename>sprites/entities/bub-green-walk-1.png</filename>
+            <filename>sprites/entities/bub-green-walk-2.png</filename>
+            <filename>sprites/entities/bub-green-walk-3.png</filename>
+            <filename>sprites/entities/bub-green-walk-4.png</filename>
+            <filename>sprites/entities/bub-green-walk-5.png</filename>
+            <filename>sprites/entities/bub-green-walk-6.png</filename>
+            <filename>sprites/entities/bub-nurse-asleep.png</filename>
+            <filename>sprites/entities/bub-nurse-awake-1.png</filename>
+            <filename>sprites/entities/bub-nurse-awake-2.png</filename>
+            <filename>sprites/entities/bub-nurse-die.png</filename>
+            <filename>sprites/entities/bub-nurse-walk-1.png</filename>
+            <filename>sprites/entities/bub-nurse-walk-2.png</filename>
+            <filename>sprites/entities/bub-nurse-walk-3.png</filename>
+            <filename>sprites/entities/bub-nurse-walk-4.png</filename>
+            <filename>sprites/entities/bub-nurse-walk-5.png</filename>
+            <filename>sprites/entities/bub-nurse-walk-6.png</filename>
+            <filename>sprites/entities/bub-winter-asleep.png</filename>
+            <filename>sprites/entities/bub-winter-awake-1.png</filename>
+            <filename>sprites/entities/bub-winter-awake-2.png</filename>
+            <filename>sprites/entities/bub-winter-die.png</filename>
+            <filename>sprites/entities/bub-winter-walk-1.png</filename>
+            <filename>sprites/entities/bub-winter-walk-2.png</filename>
+            <filename>sprites/entities/bub-winter-walk-3.png</filename>
+            <filename>sprites/entities/bub-winter-walk-4.png</filename>
+            <filename>sprites/entities/bub-winter-walk-5.png</filename>
+            <filename>sprites/entities/bub-winter-walk-6.png</filename>
+            <filename>sprites/entities/cat-asleep.png</filename>
+            <filename>sprites/entities/cat-awake.png</filename>
+            <filename>sprites/entities/cat-jump.png</filename>
+            <filename>sprites/entities/cat-sushi-chef-jump.png</filename>
+            <filename>sprites/entities/cat-sushi-chef-slice-1.png</filename>
+            <filename>sprites/entities/cat-sushi-chef-slice-2.png</filename>
+            <filename>sprites/entities/cat-sushi-chef-slice-3.png</filename>
+            <filename>sprites/entities/cat-sushi-chef-slice-4.png</filename>
+            <filename>sprites/entities/cat-sushi-chef-stand.png</filename>
+            <filename>sprites/entities/cat-sushi-chef-walk-1.png</filename>
+            <filename>sprites/entities/cat-sushi-chef-walk-2.png</filename>
+            <filename>sprites/entities/cat-sushi-chef-walk-3.png</filename>
+            <filename>sprites/entities/cat-sushi-chef-walk-4.png</filename>
+            <filename>sprites/entities/cat-walk-1.png</filename>
+            <filename>sprites/entities/cat-walk-2.png</filename>
+            <filename>sprites/entities/cat-walk-3.png</filename>
+            <filename>sprites/entities/cat-walk-4.png</filename>
+            <filename>sprites/entities/man-bald-stand.png</filename>
+            <filename>sprites/entities/man-bald-walk-1.png</filename>
+            <filename>sprites/entities/man-bald-walk-2.png</filename>
+            <filename>sprites/entities/man-bald-walk-3.png</filename>
+            <filename>sprites/entities/man-bald-walk-4.png</filename>
+            <filename>sprites/entities/man-cop-shoot.png</filename>
+            <filename>sprites/entities/man-cop-stand.png</filename>
+            <filename>sprites/entities/man-cop-walk-1.png</filename>
+            <filename>sprites/entities/man-cop-walk-2.png</filename>
+            <filename>sprites/entities/man-cop-walk-3.png</filename>
+            <filename>sprites/entities/man-cop-walk-4.png</filename>
+            <filename>sprites/entities/man-mustache-1-stand.png</filename>
+            <filename>sprites/entities/man-mustache-1-walk-1.png</filename>
+            <filename>sprites/entities/man-mustache-1-walk-2.png</filename>
+            <filename>sprites/entities/man-mustache-1-walk-3.png</filename>
+            <filename>sprites/entities/man-mustache-1-walk-4.png</filename>
+            <filename>sprites/entities/man-mustache-2-stand.png</filename>
+            <filename>sprites/entities/man-mustache-walk-1.png</filename>
+            <filename>sprites/entities/man-mustache-walk-2.png</filename>
+            <filename>sprites/entities/man-mustache-walk-3.png</filename>
+            <filename>sprites/entities/man-mustache-walk-4.png</filename>
+            <filename>sprites/entities/woman-asleep.png</filename>
+            <filename>sprites/entities/woman-awake.png</filename>
+            <filename>sprites/entities/woman-nurse-asleep.png</filename>
+            <filename>sprites/entities/woman-nurse-clipboard-hold.png</filename>
+            <filename>sprites/entities/woman-nurse-clipboard-look.png</filename>
+            <filename>sprites/entities/woman-nurse-stand.png</filename>
+            <filename>sprites/entities/woman-nurse-talk.png</filename>
+            <filename>sprites/entities/woman-nurse-walk-1.png</filename>
+            <filename>sprites/entities/woman-nurse-walk-2.png</filename>
+            <filename>sprites/entities/woman-nurse-walk-3.png</filename>
+            <filename>sprites/entities/woman-walk-1.png</filename>
+            <filename>sprites/entities/woman-walk-2.png</filename>
+            <filename>sprites/entities/woman-walk-3.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

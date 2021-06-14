@@ -7,6 +7,7 @@ import { Killable } from '../../Killable'
 
 const LUNGE_SPEED = 2 * MAP_TILE_SIZE
 const JUMP_SPEED = 150
+const SCORE_VALUE = 30
 
 export class Daikon extends Phaser.GameObjects.Container implements Killable {
   public body: Phaser.Physics.Arcade.Body
@@ -37,6 +38,8 @@ export class Daikon extends Phaser.GameObjects.Container implements Killable {
       this.jump()
     }
   }
+
+  public getScoreValue = () => SCORE_VALUE
 
   public die = () => {
     this.isDead = true

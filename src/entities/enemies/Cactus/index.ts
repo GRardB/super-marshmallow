@@ -10,6 +10,7 @@ import { LayerOrder } from '../../../globals/LayerOrder'
 const JUMP_SPEED = 100
 const WALK_SPEED = 2 * MAP_TILE_SIZE
 const MOVEMENT_INTERVAL = 3 * 1000
+const SCORE_VALUE = 70
 
 export class Cactus extends Phaser.GameObjects.Container implements Killable {
   public body: Phaser.Physics.Arcade.Body
@@ -41,6 +42,8 @@ export class Cactus extends Phaser.GameObjects.Container implements Killable {
       this.destroy()
     }
   }
+
+  public getScoreValue = () => SCORE_VALUE
 
   public die = () => {
     this.health--

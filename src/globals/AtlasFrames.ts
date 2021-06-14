@@ -1,6 +1,7 @@
 export enum AtlasFrames {
   MISSILE = 'missile.png',
   CACTUS_TOP = 'cactus-top.png',
+  SIGN = 'sign.png',
 
   KEYS_SHIFT = 'keys-10.png',
   KEYS_SPACE = 'keys-16.png',
@@ -43,6 +44,8 @@ export const mapObjectTypeToFrame = (type: string) => {
       return AtlasFrames.MOVEABLE_DIAMOND_ORANGE
     case 'MOVEABLE_DIAMOND_RED':
       return AtlasFrames.MOVEABLE_DIAMOND_RED
+    case 'SIGN':
+      return AtlasFrames.SIGN
   }
 
   return ''

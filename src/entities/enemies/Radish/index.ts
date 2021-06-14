@@ -9,6 +9,7 @@ import { EventNames } from '../../../globals/EventNames'
 const LUNGE_SPEED = 4 * MAP_TILE_SIZE
 const JUMP_SPEED = 150
 const JUMP_INTERVAL = 2 * 1000
+const SCORE_VALUE = 40
 
 export class Radish extends Phaser.GameObjects.Container implements Killable {
   public body: Phaser.Physics.Arcade.Body
@@ -40,6 +41,8 @@ export class Radish extends Phaser.GameObjects.Container implements Killable {
       this.sprite.play(RadishAnimation.RADISH_STAND, true)
     }
   }
+
+  public getScoreValue = () => SCORE_VALUE
 
   private jump = () => {
     if (this.isDead) return

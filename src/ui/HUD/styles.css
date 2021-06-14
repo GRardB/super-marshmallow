@@ -1,0 +1,61 @@
+.hud {
+  align-items: center;
+  display: flex !important;
+  font-size: 14px;
+  height: 16px;
+  line-height: 16px;
+}
+
+.coins::before {
+  background: \url(/img/hud/coin.png) left center no-repeat, \url(/img/hud/x.png) right center no-repeat;
+  content: ' ';
+  display: inline-block;
+  height: 8px;
+  margin-right: 2px;
+  width: 16px;
+}
+
+.lives::before {
+  background: \url(/img/hud/marshmallow.png) center no-repeat;
+  content: ' ';
+  display: inline-block;
+  height: 8px;
+  margin-right: 25px;
+  width: 8px;
+}
+
+.lives:not([data-lives='3']),
+.lives:not([data-lives='2']),
+.lives:not([data-lives='1']),
+.lives:not([data-lives='0']) {
+  background: \url(/img/hud/heart-full.png) 9px center no-repeat, \url(/img/hud/heart-full.png) 17px center no-repeat, \url(/img/hud/heart-full.png) 25px center no-repeat;
+}
+
+.lives[data-lives='3'] {
+  background: \url(/img/hud/heart-full.png) 9px center no-repeat, \url(/img/hud/heart-full.png) 17px center no-repeat, \url(/img/hud/heart-full.png) 25px center no-repeat;
+}
+
+.lives[data-lives='2'] {
+  background: \url(/img/hud/heart-full.png) 9px center no-repeat, \url(/img/hud/heart-full.png) 17px center no-repeat, \url(/img/hud/heart-empty.png) 25px center no-repeat;
+}
+
+.lives[data-lives='1'] {
+  background: \url(/img/hud/heart-full.png) 9px center no-repeat, \url(/img/hud/heart-empty.png) 17px center no-repeat, \url(/img/hud/heart-empty.png) 25px center no-repeat;
+}
+
+.lives[data-lives='0'] {
+  background: \url(/img/hud/heart-empty.png) 9px center no-repeat, \url(/img/hud/heart-empty.png) 17px center no-repeat, \url(/img/hud/heart-empty.png) 25px center no-repeat;
+}
+
+.time {
+  display: flex;
+}
+
+.time::before {
+  background: \url(/img/hud/clock.png) center no-repeat;
+  content: ' ';
+  display: inline-block;
+  height: 8px;
+  margin-right: 2px;
+  width: 8px;
+}

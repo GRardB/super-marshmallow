@@ -10,6 +10,7 @@ const WALK_SPEED = 2 * MAP_TILE_SIZE
 const JUMP_SPEED = 50
 const WALK_TIME = 2.5 * 1000
 const STAND_TIME = 1 * 1000
+const SCORE_VALUE = 20
 
 export class Squash extends Phaser.GameObjects.Container implements Killable {
   public body: Phaser.Physics.Arcade.Body
@@ -42,6 +43,8 @@ export class Squash extends Phaser.GameObjects.Container implements Killable {
       this.walk()
     }
   }
+
+  public getScoreValue = () => SCORE_VALUE
 
   public die = () => {
     this.isDead = true

@@ -8,6 +8,7 @@ import { Killable } from '../../Killable'
 const FLY_SPEED = 2 * MAP_TILE_SIZE
 const JUMP_SPEED = 150
 const FLY_DISTANCE = 6 * MAP_TILE_SIZE
+const SCORE_VALUE = 50
 
 export class FlyingRadish
   extends Phaser.GameObjects.Container
@@ -36,6 +37,8 @@ export class FlyingRadish
       this.destroy()
     }
   }
+
+  public getScoreValue = () => SCORE_VALUE
 
   public die = () => {
     this.tween.stop()

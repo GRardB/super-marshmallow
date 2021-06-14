@@ -1,3 +1,3 @@
 export enum SceneKey {
-  GAME = 'GAME',
+  LEVEL = 'LEVEL',
 }

@@ -6,7 +6,10 @@ import { createAnimations } from '../animations'
 export class Preloader extends Phaser.Scene {
   preload() {
     // MAP
-    this.load.image(ResourceKey.BACKGROUND_1, '/img/bg-1.png')
+    this.load.image(ResourceKey.BACKGROUND_SPRING, '/img/bg-spring.png')
+    this.load.image(ResourceKey.BACKGROUND_SUMMER, '/img/bg-summer.png')
+    this.load.image(ResourceKey.BACKGROUND_WINTER, '/img/bg-winter.png')
+    this.load.image(ResourceKey.BACKGROUND_CITY, '/img/bg-city.png')
     this.load.atlas(
       ResourceKey.MAP_TILES,
       '/img/spritesheets/tiles.png',
@@ -30,6 +33,6 @@ export class Preloader extends Phaser.Scene {
 
   create() {
     createAnimations(this)
-    this.scene.start(SceneKey.GAME)
+    this.scene.start(SceneKey.LEVEL)
   }
 }

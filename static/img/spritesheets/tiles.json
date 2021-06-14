@@ -4,139 +4,55 @@
 			"image": "tiles.png",
 			"format": "RGBA8888",
 			"size": {
-				"w": 64,
-				"h": 416
+				"w": 512,
+				"h": 1072
 			},
 			"scale": 1,
 			"frames": [
 				{
-					"filename": "ground-large-alt.png",
+					"filename": "air-conditioner.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 48,
-						"h": 80
+						"w": 32,
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 48,
-						"h": 80
+						"w": 32,
+						"h": 16
 					},
 					"frame": {
 						"x": 0,
 						"y": 0,
-						"w": 48,
-						"h": 80
+						"w": 32,
+						"h": 16
 					}
 				},
 				{
-					"filename": "ground-narrow-alt.png",
+					"filename": "bin-compost.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
 						"w": 16,
-						"h": 32
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 16,
-						"h": 32
-					},
-					"frame": {
-						"x": 48,
-						"y": 0,
-						"w": 16,
-						"h": 32
-					}
-				},
-				{
-					"filename": "ground-narrow.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 16,
-						"h": 32
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
 						"w": 16,
-						"h": 32
+						"h": 16
 					},
 					"frame": {
-						"x": 48,
-						"y": 32,
-						"w": 16,
-						"h": 32
-					}
-				},
-				{
-					"filename": "hill-narrow-alt.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 16,
-						"h": 32
-					},
-					"spriteSourceSize": {
-						"x": 0,
+						"x": 32,
 						"y": 0,
 						"w": 16,
-						"h": 32
-					},
-					"frame": {
-						"x": 48,
-						"y": 64,
-						"w": 16,
-						"h": 32
+						"h": 16
 					}
 				},
 				{
-					"filename": "ground-large.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 48,
-						"h": 80
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 48,
-						"h": 80
-					},
-					"frame": {
-						"x": 0,
-						"y": 80,
-						"w": 48,
-						"h": 80
-					}
-				},
-				{
-					"filename": "hill-narrow.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 16,
-						"h": 32
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 16,
-						"h": 32
-					},
-					"frame": {
-						"x": 48,
-						"y": 96,
-						"w": 16,
-						"h": 32
-					}
-				},
-				{
-					"filename": "block-glass-large.png",
+					"filename": "bin-landfill.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -151,13 +67,13 @@
 					},
 					"frame": {
 						"x": 48,
-						"y": 128,
+						"y": 0,
 						"w": 16,
 						"h": 16
 					}
 				},
 				{
-					"filename": "block-glass-small.png",
+					"filename": "bin-recycling.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -171,31 +87,241 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 48,
-						"y": 144,
+						"x": 64,
+						"y": 0,
 						"w": 16,
 						"h": 16
 					}
 				},
 				{
-					"filename": "tree-1.png",
+					"filename": "bins.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
 						"w": 48,
-						"h": 48
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
 						"w": 48,
-						"h": 48
+						"h": 16
 					},
 					"frame": {
-						"x": 0,
-						"y": 160,
+						"x": 80,
+						"y": 0,
 						"w": 48,
-						"h": 48
+						"h": 16
+					}
+				},
+				{
+					"filename": "block-concrete.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 16
+					},
+					"frame": {
+						"x": 128,
+						"y": 0,
+						"w": 48,
+						"h": 16
+					}
+				},
+				{
+					"filename": "block-ice-large.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 176,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "block-ice-small.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 192,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "block-metal.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 208,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "boulder.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 224,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "bowls-stacked-gray.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 240,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "bowls-stacked-white.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 256,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "box-cardboard-1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 272,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "box-cardboard-2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 288,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "box-cardboard-3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 304,
+						"y": 0,
+						"w": 16,
+						"h": 16
 					}
 				},
 				{
@@ -213,8 +339,8 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 48,
-						"y": 160,
+						"x": 320,
+						"y": 0,
 						"w": 16,
 						"h": 16
 					}
@@ -234,8 +360,8 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 48,
-						"y": 176,
+						"x": 336,
+						"y": 0,
 						"w": 16,
 						"h": 16
 					}
@@ -255,31 +381,10 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 48,
-						"y": 192,
+						"x": 352,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					}
-				},
-				{
-					"filename": "tree-2.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 48,
-						"h": 48
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 48,
-						"h": 48
-					},
-					"frame": {
-						"x": 0,
-						"y": 208,
-						"w": 48,
-						"h": 48
 					}
 				},
 				{
@@ -297,8 +402,8 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 48,
-						"y": 208,
+						"x": 368,
+						"y": 0,
 						"w": 16,
 						"h": 16
 					}
@@ -318,8 +423,8 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 48,
-						"y": 224,
+						"x": 384,
+						"y": 0,
 						"w": 16,
 						"h": 16
 					}
@@ -339,31 +444,10 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 48,
-						"y": 240,
+						"x": 400,
+						"y": 0,
 						"w": 16,
 						"h": 16
-					}
-				},
-				{
-					"filename": "hill-medium-alt.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 48,
-						"h": 32
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 48,
-						"h": 32
-					},
-					"frame": {
-						"x": 0,
-						"y": 256,
-						"w": 48,
-						"h": 32
 					}
 				},
 				{
@@ -381,8 +465,8 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 48,
-						"y": 256,
+						"x": 416,
+						"y": 0,
 						"w": 16,
 						"h": 16
 					}
@@ -402,31 +486,52 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 48,
-						"y": 272,
+						"x": 432,
+						"y": 0,
 						"w": 16,
 						"h": 16
 					}
 				},
 				{
-					"filename": "hill-medium.png",
+					"filename": "brick-wall-long.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 48,
-						"h": 32
+						"w": 112,
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 48,
-						"h": 32
+						"w": 112,
+						"h": 16
 					},
 					"frame": {
 						"x": 0,
-						"y": 288,
-						"w": 48,
-						"h": 32
+						"y": 16,
+						"w": 112,
+						"h": 16
+					}
+				},
+				{
+					"filename": "brick-wall-short.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 64,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 64,
+						"h": 16
+					},
+					"frame": {
+						"x": 112,
+						"y": 16,
+						"w": 64,
+						"h": 16
 					}
 				},
 				{
@@ -444,8 +549,8 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 48,
-						"y": 288,
+						"x": 176,
+						"y": 16,
 						"w": 16,
 						"h": 16
 					}
@@ -465,30 +570,345 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 48,
-						"y": 304,
+						"x": 192,
+						"y": 16,
 						"w": 16,
 						"h": 16
 					}
 				},
 				{
-					"filename": "ground-slim-alt.png",
+					"filename": "bush-spring.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 48,
+						"w": 16,
 						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 48,
+						"w": 16,
 						"h": 16
 					},
 					"frame": {
+						"x": 208,
+						"y": 16,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "bush-winter.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
 						"x": 0,
-						"y": 320,
-						"w": 48,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 224,
+						"y": 16,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "candy-bar-chocolate.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 240,
+						"y": 16,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "candy-bar-pink.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 256,
+						"y": 16,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "candy-blue.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 272,
+						"y": 16,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "candy-brown.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 288,
+						"y": 16,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "candy-green.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 304,
+						"y": 16,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "candy-pink.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 320,
+						"y": 16,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "coffee-table-large-alt.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 16
+					},
+					"frame": {
+						"x": 336,
+						"y": 16,
+						"w": 32,
+						"h": 16
+					}
+				},
+				{
+					"filename": "coffee-table-large.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 16
+					},
+					"frame": {
+						"x": 368,
+						"y": 16,
+						"w": 32,
+						"h": 16
+					}
+				},
+				{
+					"filename": "coffee-table-small.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 400,
+						"y": 16,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "crate-black.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 416,
+						"y": 16,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "crate-green.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 432,
+						"y": 16,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "crate-purple.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 448,
+						"y": 16,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "crate-red.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 16
+					},
+					"frame": {
+						"x": 464,
+						"y": 16,
+						"w": 32,
+						"h": 16
+					}
+				},
+				{
+					"filename": "crate-wood.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 496,
+						"y": 16,
+						"w": 16,
 						"h": 16
 					}
 				},
@@ -507,30 +927,9 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 48,
-						"y": 320,
+						"x": 0,
+						"y": 32,
 						"w": 16,
-						"h": 16
-					}
-				},
-				{
-					"filename": "ground-wide.png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 48,
-						"h": 16
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 48,
-						"h": 16
-					},
-					"frame": {
-						"x": 0,
-						"y": 336,
-						"w": 48,
 						"h": 16
 					}
 				},
@@ -549,8 +948,8 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 48,
-						"y": 336,
+						"x": 16,
+						"y": 32,
 						"w": 16,
 						"h": 16
 					}
@@ -570,8 +969,8 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 0,
-						"y": 352,
+						"x": 32,
+						"y": 32,
 						"w": 16,
 						"h": 16
 					}
@@ -591,8 +990,8 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 16,
-						"y": 352,
+						"x": 48,
+						"y": 32,
 						"w": 16,
 						"h": 16
 					}
@@ -612,8 +1011,8 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 32,
-						"y": 352,
+						"x": 64,
+						"y": 32,
 						"w": 16,
 						"h": 16
 					}
@@ -633,8 +1032,8 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 48,
-						"y": 352,
+						"x": 80,
+						"y": 32,
 						"w": 16,
 						"h": 16
 					}
@@ -654,8 +1053,8 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 0,
-						"y": 368,
+						"x": 96,
+						"y": 32,
 						"w": 16,
 						"h": 16
 					}
@@ -675,8 +1074,638 @@
 						"h": 16
 					},
 					"frame": {
+						"x": 112,
+						"y": 32,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "diner-table.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 16
+					},
+					"frame": {
+						"x": 128,
+						"y": 32,
+						"w": 32,
+						"h": 16
+					}
+				},
+				{
+					"filename": "fence-1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 16
+					},
+					"frame": {
+						"x": 160,
+						"y": 32,
+						"w": 48,
+						"h": 16
+					}
+				},
+				{
+					"filename": "fence-2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 16
+					},
+					"frame": {
+						"x": 208,
+						"y": 32,
+						"w": 48,
+						"h": 16
+					}
+				},
+				{
+					"filename": "fence-balcony.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 64,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 64,
+						"h": 16
+					},
+					"frame": {
+						"x": 256,
+						"y": 32,
+						"w": 64,
+						"h": 16
+					}
+				},
+				{
+					"filename": "fence-summer.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 16
+					},
+					"frame": {
+						"x": 320,
+						"y": 32,
+						"w": 48,
+						"h": 16
+					}
+				},
+				{
+					"filename": "fish-1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 368,
+						"y": 32,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "fish-2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 384,
+						"y": 32,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "flower-blue.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 400,
+						"y": 32,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "flower-pink.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 416,
+						"y": 32,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "flower-white.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 432,
+						"y": 32,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "flower-yellow.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 448,
+						"y": 32,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "food-burger.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 464,
+						"y": 32,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "food-cake-chocolate.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 480,
+						"y": 32,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "food-cake-vanilla.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 496,
+						"y": 32,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "food-nigiri-stacked.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 48,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "food-nigiri.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
 						"x": 16,
-						"y": 368,
+						"y": 48,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "food-onigiri-stacked.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 32,
+						"y": 48,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "food-onigiri.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 48,
+						"y": 48,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "food-salad.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 64,
+						"y": 48,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "food-sandwich.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 80,
+						"y": 48,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "food-sushi-stacked.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 96,
+						"y": 48,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "food-sushi.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 112,
+						"y": 48,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "french-fries.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 128,
+						"y": 48,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "fruit-apple.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 144,
+						"y": 48,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "fruit-blackberry.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 160,
+						"y": 48,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "fruit-grape.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 176,
+						"y": 48,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "fruit-grapes.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 192,
+						"y": 48,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "fruit-orange.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 208,
+						"y": 48,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "fruit-pear.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 224,
+						"y": 48,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "fruit-strawberry.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 240,
+						"y": 48,
 						"w": 16,
 						"h": 16
 					}
@@ -696,14 +1725,161 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 32,
-						"y": 368,
+						"x": 256,
+						"y": 48,
 						"w": 16,
 						"h": 16
 					}
 				},
 				{
-					"filename": "ground-block-alt.png",
+					"filename": "ground-brick.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 16
+					},
+					"frame": {
+						"x": 272,
+						"y": 48,
+						"w": 32,
+						"h": 16
+					}
+				},
+				{
+					"filename": "ground-sidewalk.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 64,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 64,
+						"h": 16
+					},
+					"frame": {
+						"x": 304,
+						"y": 48,
+						"w": 64,
+						"h": 16
+					}
+				},
+				{
+					"filename": "ground-slim-spring.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 128,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 128,
+						"h": 16
+					},
+					"frame": {
+						"x": 368,
+						"y": 48,
+						"w": 128,
+						"h": 16
+					}
+				},
+				{
+					"filename": "ice-cream-brown.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 496,
+						"y": 48,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "ice-cream-green.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 0,
+						"y": 64,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "ice-cream-pink.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 16,
+						"y": 64,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "ice-cream-white.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 32,
+						"y": 64,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "leaves-winter.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -718,13 +1894,559 @@
 					},
 					"frame": {
 						"x": 48,
-						"y": 368,
+						"y": 64,
 						"w": 16,
 						"h": 16
 					}
 				},
 				{
-					"filename": "ground-block.png",
+					"filename": "leaves.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 64,
+						"y": 64,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "milk-carton-blue.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 80,
+						"y": 64,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "milk-carton-brown.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 96,
+						"y": 64,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "milk-carton-pink.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 112,
+						"y": 64,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "mound.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 16
+					},
+					"frame": {
+						"x": 128,
+						"y": 64,
+						"w": 48,
+						"h": 16
+					}
+				},
+				{
+					"filename": "mug-1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 176,
+						"y": 64,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "mug-2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 192,
+						"y": 64,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "mug-3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 208,
+						"y": 64,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "mugs-stacked.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 224,
+						"y": 64,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "napkin-holder.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 240,
+						"y": 64,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "painting-1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 256,
+						"y": 64,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "painting-2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 272,
+						"y": 64,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "painting-3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 288,
+						"y": 64,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "pancakes.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 304,
+						"y": 64,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "plate-white.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 320,
+						"y": 64,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "plate-wood.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 336,
+						"y": 64,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "plates-stacked-brown.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 352,
+						"y": 64,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "plates-stacked-gray.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 368,
+						"y": 64,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "plates-stacked-white-high.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 384,
+						"y": 64,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "plates-white-stacked-low.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 400,
+						"y": 64,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "plates-wood-stacked-high.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 416,
+						"y": 64,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "plates-wood-stacked-low.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 432,
+						"y": 64,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "popsicle-blue.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 448,
+						"y": 64,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "popsicle-brown.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 464,
+						"y": 64,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "popsicle-orange.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 480,
+						"y": 64,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "popsicle-purple.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 496,
+						"y": 64,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "potted-flower-blue.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -739,7 +2461,91 @@
 					},
 					"frame": {
 						"x": 0,
-						"y": 384,
+						"y": 80,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "potted-flower-purple.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 16,
+						"y": 80,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "potted-flower-white.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 32,
+						"y": 80,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "potted-flower-yellow.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 48,
+						"y": 80,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "power-outlet.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 64,
+						"y": 80,
 						"w": 16,
 						"h": 16
 					}
@@ -749,24 +2555,24 @@
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 16,
+						"w": 32,
 						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 16,
+						"w": 32,
 						"h": 16
 					},
 					"frame": {
-						"x": 16,
-						"y": 384,
-						"w": 16,
+						"x": 80,
+						"y": 80,
+						"w": 32,
 						"h": 16
 					}
 				},
 				{
-					"filename": "water-alt.png",
+					"filename": "stool-green.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -780,14 +2586,14 @@
 						"h": 16
 					},
 					"frame": {
-						"x": 32,
-						"y": 384,
+						"x": 112,
+						"y": 80,
 						"w": 16,
 						"h": 16
 					}
 				},
 				{
-					"filename": "water-sparkle-alt.png",
+					"filename": "stool-red.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -799,33 +2605,1419 @@
 						"y": 0,
 						"w": 16,
 						"h": 16
+					},
+					"frame": {
+						"x": 128,
+						"y": 80,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "water-bottle-blue.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 144,
+						"y": 80,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "water-bottle-brown.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 160,
+						"y": 80,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "water-bottle-green.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 176,
+						"y": 80,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "water-bottle-orange.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 192,
+						"y": 80,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "arcade-game-blue-left.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 208,
+						"y": 80,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "arcade-game-blue-right.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 240,
+						"y": 80,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "arcade-game-pink-left.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 272,
+						"y": 80,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "arcade-game-pink-right.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 304,
+						"y": 80,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "bench-wooden.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 32
+					},
+					"frame": {
+						"x": 336,
+						"y": 80,
+						"w": 48,
+						"h": 32
+					}
+				},
+				{
+					"filename": "boxes-cardboard.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 384,
+						"y": 80,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "bridge-high-1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 64,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 64,
+						"h": 32
+					},
+					"frame": {
+						"x": 416,
+						"y": 80,
+						"w": 64,
+						"h": 32
+					}
+				},
+				{
+					"filename": "bridge-high-2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 64,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 64,
+						"h": 32
+					},
+					"frame": {
+						"x": 0,
+						"y": 112,
+						"w": 64,
+						"h": 32
+					}
+				},
+				{
+					"filename": "bridge-high-3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 64,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 64,
+						"h": 32
+					},
+					"frame": {
+						"x": 64,
+						"y": 112,
+						"w": 64,
+						"h": 32
+					}
+				},
+				{
+					"filename": "chair-green.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 32
+					},
+					"frame": {
+						"x": 128,
+						"y": 112,
+						"w": 16,
+						"h": 32
+					}
+				},
+				{
+					"filename": "chair-office-green.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 32
+					},
+					"frame": {
+						"x": 144,
+						"y": 112,
+						"w": 16,
+						"h": 32
+					}
+				},
+				{
+					"filename": "chair-wood.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 32
+					},
+					"frame": {
+						"x": 160,
+						"y": 112,
+						"w": 16,
+						"h": 32
+					}
+				},
+				{
+					"filename": "counter-double.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 80,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 80,
+						"h": 32
+					},
+					"frame": {
+						"x": 176,
+						"y": 112,
+						"w": 80,
+						"h": 32
+					}
+				},
+				{
+					"filename": "counter-ice-cream.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 112,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 112,
+						"h": 32
+					},
+					"frame": {
+						"x": 256,
+						"y": 112,
+						"w": 112,
+						"h": 32
+					}
+				},
+				{
+					"filename": "counter-single.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 368,
+						"y": 112,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "counter-sushi.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 80,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 80,
+						"h": 32
+					},
+					"frame": {
+						"x": 400,
+						"y": 112,
+						"w": 80,
+						"h": 32
+					}
+				},
+				{
+					"filename": "counter-with-flower.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 64,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 64,
+						"h": 32
+					},
+					"frame": {
+						"x": 0,
+						"y": 144,
+						"w": 64,
+						"h": 32
+					}
+				},
+				{
+					"filename": "crate-blue.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 64,
+						"y": 144,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "crate-wood-large.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 96,
+						"y": 144,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "crate-yellow.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 32
+					},
+					"frame": {
+						"x": 128,
+						"y": 144,
+						"w": 16,
+						"h": 32
+					}
+				},
+				{
+					"filename": "diner-table-alt.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 144,
+						"y": 144,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "dining-table.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 64,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 64,
+						"h": 32
+					},
+					"frame": {
+						"x": 176,
+						"y": 144,
+						"w": 64,
+						"h": 32
+					}
+				},
+				{
+					"filename": "door-open-black.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 240,
+						"y": 144,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "door-open-blue.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 272,
+						"y": 144,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "door-open-brown.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 32
+					},
+					"frame": {
+						"x": 304,
+						"y": 144,
+						"w": 48,
+						"h": 32
+					}
+				},
+				{
+					"filename": "double-doors-open-large.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 32
+					},
+					"frame": {
+						"x": 352,
+						"y": 144,
+						"w": 48,
+						"h": 32
+					}
+				},
+				{
+					"filename": "fence-spring.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 32
+					},
+					"frame": {
+						"x": 400,
+						"y": 144,
+						"w": 48,
+						"h": 32
+					}
+				},
+				{
+					"filename": "fence-winter.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 32
+					},
+					"frame": {
+						"x": 448,
+						"y": 144,
+						"w": 48,
+						"h": 32
+					}
+				},
+				{
+					"filename": "flower-bed.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 32
+					},
+					"frame": {
+						"x": 0,
+						"y": 176,
+						"w": 48,
+						"h": 32
+					}
+				},
+				{
+					"filename": "flowers-1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 64,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 64,
+						"h": 32
 					},
 					"frame": {
 						"x": 48,
-						"y": 384,
-						"w": 16,
-						"h": 16
+						"y": 176,
+						"w": 64,
+						"h": 32
 					}
 				},
 				{
-					"filename": "water-sparkle.png",
+					"filename": "flowers-2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 64,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 64,
+						"h": 32
+					},
+					"frame": {
+						"x": 112,
+						"y": 176,
+						"w": 64,
+						"h": 32
+					}
+				},
+				{
+					"filename": "flowers-3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 64,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 64,
+						"h": 32
+					},
+					"frame": {
+						"x": 176,
+						"y": 176,
+						"w": 64,
+						"h": 32
+					}
+				},
+				{
+					"filename": "flowers-brick-1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 64,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 64,
+						"h": 32
+					},
+					"frame": {
+						"x": 240,
+						"y": 176,
+						"w": 64,
+						"h": 32
+					}
+				},
+				{
+					"filename": "flowers-brick-2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 64,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 64,
+						"h": 32
+					},
+					"frame": {
+						"x": 304,
+						"y": 176,
+						"w": 64,
+						"h": 32
+					}
+				},
+				{
+					"filename": "flowers-brick-3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 64,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 64,
+						"h": 32
+					},
+					"frame": {
+						"x": 368,
+						"y": 176,
+						"w": 64,
+						"h": 32
+					}
+				},
+				{
+					"filename": "flowers-long.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 112,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 112,
+						"h": 32
+					},
+					"frame": {
+						"x": 0,
+						"y": 208,
+						"w": 112,
+						"h": 32
+					}
+				},
+				{
+					"filename": "flowers-potted-1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 32
+					},
+					"frame": {
+						"x": 112,
+						"y": 208,
+						"w": 48,
+						"h": 32
+					}
+				},
+				{
+					"filename": "flowers-potted-2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 32
+					},
+					"frame": {
+						"x": 160,
+						"y": 208,
+						"w": 48,
+						"h": 32
+					}
+				},
+				{
+					"filename": "flowers-potted-3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 32
+					},
+					"frame": {
+						"x": 208,
+						"y": 208,
+						"w": 48,
+						"h": 32
+					}
+				},
+				{
+					"filename": "flowers-potted-4.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 64,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 64,
+						"h": 32
+					},
+					"frame": {
+						"x": 256,
+						"y": 208,
+						"w": 64,
+						"h": 32
+					}
+				},
+				{
+					"filename": "flowers-potted-5.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 64,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 64,
+						"h": 32
+					},
+					"frame": {
+						"x": 320,
+						"y": 208,
+						"w": 64,
+						"h": 32
+					}
+				},
+				{
+					"filename": "flowers-potted-long.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 112,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 112,
+						"h": 32
+					},
+					"frame": {
+						"x": 384,
+						"y": 208,
+						"w": 112,
+						"h": 32
+					}
+				},
+				{
+					"filename": "fridge-closed.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
 						"w": 16,
-						"h": 16
+						"h": 32
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
 						"w": 16,
-						"h": 16
+						"h": 32
+					},
+					"frame": {
+						"x": 496,
+						"y": 208,
+						"w": 16,
+						"h": 32
+					}
+				},
+				{
+					"filename": "fridge-open.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
 					},
 					"frame": {
 						"x": 0,
-						"y": 400,
+						"y": 240,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "kitchen-sink.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 32,
+						"y": 240,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "lava-alt.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 64,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 64,
+						"h": 32
+					},
+					"frame": {
+						"x": 64,
+						"y": 240,
+						"w": 64,
+						"h": 32
+					}
+				},
+				{
+					"filename": "lava.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 64,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 64,
+						"h": 32
+					},
+					"frame": {
+						"x": 128,
+						"y": 240,
+						"w": 64,
+						"h": 32
+					}
+				},
+				{
+					"filename": "potted-plant.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
 						"w": 16,
-						"h": 16
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 32
+					},
+					"frame": {
+						"x": 192,
+						"y": 240,
+						"w": 16,
+						"h": 32
+					}
+				},
+				{
+					"filename": "sofa-blue.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 32
+					},
+					"frame": {
+						"x": 208,
+						"y": 240,
+						"w": 48,
+						"h": 32
+					}
+				},
+				{
+					"filename": "sofa-brown.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 32
+					},
+					"frame": {
+						"x": 256,
+						"y": 240,
+						"w": 48,
+						"h": 32
+					}
+				},
+				{
+					"filename": "sofa-chair-blue.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 304,
+						"y": 240,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "sofa-chair-brown.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 336,
+						"y": 240,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "sofa-chair-gray.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 368,
+						"y": 240,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "sofa-chair-green.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 400,
+						"y": 240,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "sofa-chair-red.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 432,
+						"y": 240,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "sofa-chair-yellow.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 464,
+						"y": 240,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "sofa-gray.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 32
+					},
+					"frame": {
+						"x": 0,
+						"y": 272,
+						"w": 48,
+						"h": 32
+					}
+				},
+				{
+					"filename": "sofa-green.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 32
+					},
+					"frame": {
+						"x": 48,
+						"y": 272,
+						"w": 48,
+						"h": 32
+					}
+				},
+				{
+					"filename": "sofa-red.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 32
+					},
+					"frame": {
+						"x": 96,
+						"y": 272,
+						"w": 48,
+						"h": 32
+					}
+				},
+				{
+					"filename": "sofa-yellow.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 32
+					},
+					"frame": {
+						"x": 144,
+						"y": 272,
+						"w": 48,
+						"h": 32
+					}
+				},
+				{
+					"filename": "tv-off.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 192,
+						"y": 272,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "tv-on.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 224,
+						"y": 272,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "vending-machine.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 256,
+						"y": 272,
+						"w": 32,
+						"h": 32
 					}
 				},
 				{
@@ -833,20 +4025,755 @@
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 288,
+						"y": 272,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "window-curtains-blue.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 320,
+						"y": 272,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "window-curtains-green.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 352,
+						"y": 272,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "window-curtains-red.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 384,
+						"y": 272,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "work-desk-left.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 416,
+						"y": 272,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "work-desk-right.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 448,
+						"y": 272,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "fence-chainlink.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 112,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 112,
+						"h": 48
+					},
+					"frame": {
+						"x": 0,
+						"y": 304,
+						"w": 112,
+						"h": 48
+					}
+				},
+				{
+					"filename": "ground-spring.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 80,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 80,
+						"h": 48
+					},
+					"frame": {
+						"x": 112,
+						"y": 304,
+						"w": 80,
+						"h": 48
+					}
+				},
+				{
+					"filename": "ground-summer.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 80,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 80,
+						"h": 48
+					},
+					"frame": {
+						"x": 192,
+						"y": 304,
+						"w": 80,
+						"h": 48
+					}
+				},
+				{
+					"filename": "ground-winter.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 80,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 80,
+						"h": 48
+					},
+					"frame": {
+						"x": 272,
+						"y": 304,
+						"w": 80,
+						"h": 48
+					}
+				},
+				{
+					"filename": "tree-brick.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 48
+					},
+					"frame": {
+						"x": 352,
+						"y": 304,
+						"w": 48,
+						"h": 48
+					}
+				},
+				{
+					"filename": "tree-spring-alt.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 48
+					},
+					"frame": {
+						"x": 400,
+						"y": 304,
+						"w": 48,
+						"h": 48
+					}
+				},
+				{
+					"filename": "tree-spring.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 48
+					},
+					"frame": {
+						"x": 448,
+						"y": 304,
+						"w": 48,
+						"h": 48
+					}
+				},
+				{
+					"filename": "tree-summer.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 48
+					},
+					"frame": {
+						"x": 0,
+						"y": 352,
+						"w": 48,
+						"h": 48
+					}
+				},
+				{
+					"filename": "tree-winter-alt.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 48
+					},
+					"frame": {
+						"x": 48,
+						"y": 352,
+						"w": 48,
+						"h": 48
+					}
+				},
+				{
+					"filename": "tree-winter.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 48
+					},
+					"frame": {
+						"x": 96,
+						"y": 352,
+						"w": 48,
+						"h": 48
+					}
+				},
+				{
+					"filename": "underground.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 48
+					},
+					"frame": {
+						"x": 144,
+						"y": 352,
+						"w": 48,
+						"h": 48
+					}
+				},
+				{
+					"filename": "wall-art.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 48
+					},
+					"frame": {
+						"x": 192,
+						"y": 352,
+						"w": 32,
+						"h": 48
+					}
+				},
+				{
+					"filename": "wall-brick-flowers-narrow.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
 						"w": 16,
-						"h": 16
+						"h": 48
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
 						"w": 16,
-						"h": 16
+						"h": 48
 					},
 					"frame": {
-						"x": 16,
-						"y": 400,
+						"x": 224,
+						"y": 352,
 						"w": 16,
-						"h": 16
+						"h": 48
+					}
+				},
+				{
+					"filename": "wall-brick-flowers-wide.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 48
+					},
+					"frame": {
+						"x": 240,
+						"y": 352,
+						"w": 32,
+						"h": 48
+					}
+				},
+				{
+					"filename": "wall-transit-map.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 48
+					},
+					"frame": {
+						"x": 272,
+						"y": 352,
+						"w": 32,
+						"h": 48
+					}
+				},
+				{
+					"filename": "bookshelf.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 64
+					},
+					"frame": {
+						"x": 304,
+						"y": 352,
+						"w": 32,
+						"h": 64
+					}
+				},
+				{
+					"filename": "light-rail-car.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 128,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 128,
+						"h": 64
+					},
+					"frame": {
+						"x": 336,
+						"y": 352,
+						"w": 128,
+						"h": 64
+					}
+				},
+				{
+					"filename": "light-rail-station.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 144,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 144,
+						"h": 64
+					},
+					"frame": {
+						"x": 0,
+						"y": 416,
+						"w": 144,
+						"h": 64
+					}
+				},
+				{
+					"filename": "plant-decorations-2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 144,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 144,
+						"h": 64
+					},
+					"frame": {
+						"x": 144,
+						"y": 416,
+						"w": 144,
+						"h": 64
+					}
+				},
+				{
+					"filename": "plant-decorations.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 64
+					},
+					"frame": {
+						"x": 288,
+						"y": 416,
+						"w": 32,
+						"h": 64
+					}
+				},
+				{
+					"filename": "background-indoors.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 352,
+						"h": 80
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 352,
+						"h": 80
+					},
+					"frame": {
+						"x": 0,
+						"y": 480,
+						"w": 352,
+						"h": 80
+					}
+				},
+				{
+					"filename": "building-burger.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 112,
+						"h": 80
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 112,
+						"h": 80
+					},
+					"frame": {
+						"x": 352,
+						"y": 480,
+						"w": 112,
+						"h": 80
+					}
+				},
+				{
+					"filename": "building-cafe.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 144,
+						"h": 80
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 144,
+						"h": 80
+					},
+					"frame": {
+						"x": 0,
+						"y": 560,
+						"w": 144,
+						"h": 80
+					}
+				},
+				{
+					"filename": "building-shop.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 192,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 192,
+						"h": 96
+					},
+					"frame": {
+						"x": 144,
+						"y": 560,
+						"w": 192,
+						"h": 96
+					}
+				},
+				{
+					"filename": "electric-poles.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 160,
+						"h": 112
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 160,
+						"h": 112
+					},
+					"frame": {
+						"x": 336,
+						"y": 560,
+						"w": 160,
+						"h": 112
+					}
+				},
+				{
+					"filename": "traffic-poles.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 176,
+						"h": 112
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 176,
+						"h": 112
+					},
+					"frame": {
+						"x": 0,
+						"y": 672,
+						"w": 176,
+						"h": 112
+					}
+				},
+				{
+					"filename": "building-health-center.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 176,
+						"h": 160
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 176,
+						"h": 160
+					},
+					"frame": {
+						"x": 176,
+						"y": 672,
+						"w": 176,
+						"h": 160
+					}
+				},
+				{
+					"filename": "building-sushi.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 112,
+						"h": 176
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 112,
+						"h": 176
+					},
+					"frame": {
+						"x": 352,
+						"y": 672,
+						"w": 112,
+						"h": 176
+					}
+				},
+				{
+					"filename": "building-apartments-1.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 128,
+						"h": 192
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 128,
+						"h": 192
+					},
+					"frame": {
+						"x": 0,
+						"y": 848,
+						"w": 128,
+						"h": 192
+					}
+				},
+				{
+					"filename": "building-apartments-2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 112,
+						"h": 224
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 112,
+						"h": 224
+					},
+					"frame": {
+						"x": 128,
+						"y": 848,
+						"w": 112,
+						"h": 224
 					}
 				}
 			]
@@ -855,6 +4782,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:51fbbe450b1f09387e349516bbd2da64:22e68e465013fdf4f0af9b82b9d5d4ee:accbe1e7e294ded8391337fc1c446319$"
+		"smartupdate": "$TexturePacker:SmartUpdate:d1332769d4ac2d30eb0a7befbea7ac3a:807ebc9d22e8263082b2d72266a1a7a8:accbe1e7e294ded8391337fc1c446319$"
 	}
 }

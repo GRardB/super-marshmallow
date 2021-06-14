@@ -1,6 +1,16 @@
 import { Coin } from '../entities/Coin'
 import { Player } from '../entities/Player'
+import { GameState } from '../globals/GameState'
 
-export const handleCoinPlayerCollision = (player: Player, coin: Coin) => {
+const COIN_SCORE_VALUE = 1
+
+export const handleCoinPlayerCollision = (
+  gameState: GameState,
+  player: Player,
+  coin: Coin,
+) => {
+  ;(coin.body as Phaser.Physics.Arcade.StaticBody).enable = false
+  gameState.addToScore(COIN_SCORE_VALUE)
+  gameState.incrementCoins()
   coin.collect()
 }

@@ -1,0 +1,27 @@
+@import url(../ui/HUD/styles.css);
+
+@font-face {
+  font-family: at01;
+  src: \url(/fonts/at01.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game {
+  font-family: at01;
+  color: #FFF;
+  user-select: none;
+
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.message {
+  font-size: 14px;
+}

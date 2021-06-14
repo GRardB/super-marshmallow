@@ -1,13 +1,14 @@
 import Phaser from 'phaser'
-import { Game } from './scenes/Game'
+import { Level } from './scenes/Level'
 import { Preloader } from './scenes/Preloader'
 
 export default new Phaser.Game({
   parent: 'game',
   type: Phaser.AUTO,
+  backgroundColor: 0x141414,
   antialiasGL: false,
   pixelArt: true,
-  scene: [Preloader, Game],
+  scene: [Preloader, Level],
   banner: {
     hidePhaser: true,
   },

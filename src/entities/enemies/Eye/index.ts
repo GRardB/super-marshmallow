@@ -10,6 +10,7 @@ const FALL_SPEED = 10 * MAP_TILE_SIZE
 const CANNON_BALL_SPEED = 3 * MAP_TILE_SIZE
 const ROTATION_INTERVAL = 1 * 1000
 const SHOOT_INTERVAL = 3 * 1000
+const SCORE_VALUE = 100
 
 export class Eye extends Phaser.GameObjects.Container implements Killable {
   public body: Phaser.Physics.Arcade.Body
@@ -57,6 +58,8 @@ export class Eye extends Phaser.GameObjects.Container implements Killable {
       }
     }
   }
+
+  public getScoreValue = () => SCORE_VALUE
 
   public setTarget = (target: Phaser.GameObjects.Container) => {
     this.target = target
