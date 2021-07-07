@@ -34,7 +34,7 @@ enum MapKeys {
   DECORATIONS_BACKGROUND = 'DECORATIONS_BACKGROUND',
   DECORATIONS_FOREGROUND = 'DECORATIONS_FOREGROUND',
   SPAWN_POINTS = 'SPAWN_POINTS',
-  MESSAGES = 'MESSAGES',
+  MISC = 'MISC',
 
   // ENTITY OBJECT TYPES
   COINS = 'COINS',
@@ -82,7 +82,7 @@ export const setUpLevel = (
   })
   const coins = createCoins(scene, map)
   setUpCamera(scene, map, player)
-  createMessages(scene, map)
+  createMiscObjects(scene, map)
 
   return {
     cactusTops,
@@ -311,9 +311,9 @@ const createCoins = (scene: Phaser.Scene, map: Phaser.Tilemaps.Tilemap) => {
     .setDepth(LayerOrder.COINS)
 }
 
-const createMessages = (scene: Phaser.Scene, map: Phaser.Tilemaps.Tilemap) => {
+const createMiscObjects = (scene: Phaser.Scene, map: Phaser.Tilemaps.Tilemap) => {
   map
-    .getObjectLayer(MapKeys.MESSAGES)
+    .getObjectLayer(MapKeys.MISC)
     .objects.forEach(({ x, y, text, type }) => {
       if (text) {
         const element = scene.add
@@ -323,7 +323,7 @@ const createMessages = (scene: Phaser.Scene, map: Phaser.Tilemaps.Tilemap) => {
       } else {
         scene.add
           .image(x, y, ResourceKey.KEYS, mapObjectTypeToFrame(type))
-          .setDepth(LayerOrder.MESSAGES)
+          .setDepth(LayerOrder.MISC)
       }
     })
 }

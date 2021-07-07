@@ -6,5 +6,5 @@ export enum LayerOrder {
   CHARACTERS,
   PROJECTILES,
   MAP_DECORATIONS_FOREGROUND,
-  MESSAGES,
+  MISC,
 }
