@@ -87,7 +87,11 @@ export class Level extends Phaser.Scene {
     this.gameState.off(GameStateEvent.TIME_UPDATE, this.hud.updateTime)
     this.time.removeAllEvents()
 
-    this.scene.restart({ gameState: this.gameState })
+    if (this.gameState.getNumLives() > 0) {
+      this.scene.restart({ gameState: this.gameState })
+    } else {
+      this.scene.start(SceneKey.GAME_OVER)
+    }
   }
 
   private updateDespawnZonePosition = () => {

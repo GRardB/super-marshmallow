@@ -6,7 +6,7 @@ const COIN_SCORE_VALUE = 1
 
 export const handleCoinPlayerCollision = (
   gameState: GameState,
-  player: Player,
+  _player: Player,
   coin: Coin,
 ) => {
   ;(coin.body as Phaser.Physics.Arcade.StaticBody).enable = false

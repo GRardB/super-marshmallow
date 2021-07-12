@@ -56,6 +56,8 @@ export class GameState extends Phaser.Events.EventEmitter {
     this.emit(GameStateEvent.LIVES_UPDATE, this.numLives)
   }
 
+  public getNumLives = () => this.numLives
+
   public incrementCoins = () => {
     this.numCoins++
 

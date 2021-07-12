@@ -12,7 +12,7 @@ export class Player extends Phaser.GameObjects.Container {
   public body: Phaser.Physics.Arcade.Body
   private sprite: Phaser.GameObjects.Sprite
   private playerState: PlayerState
-  private cursorKeys
+  private cursorKeys: ExtendedCursorKeys
 
   constructor(
     scene: Phaser.Scene,
