@@ -1,3 +1,9 @@
+.hud-bg {
+  background: #000;
+  height: 16px;
+  width: 100%;
+}
+
 .hud {
   align-items: center;
   display: flex !important;

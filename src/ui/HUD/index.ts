@@ -12,6 +12,12 @@ export class HUD extends Phaser.GameObjects.Container {
   constructor(scene: Phaser.Scene, x: number, y: number) {
     super(scene, x, y)
 
+    this.scene.add
+      .dom(0, 0, 'div')
+      .setClassName('hud-bg')
+      .setOrigin(0,0)
+      .setScrollFactor(0, 0)
+
     this.lives = this.scene.add
       .dom(SIDE_MARGIN_PIXELS, 0, 'div')
       .setClassName('hud lives')
