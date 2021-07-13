@@ -1,14 +1,14 @@
 import Phaser from 'phaser'
 import { SceneKey } from '../globals/SceneKeys'
 
-export class GameOver extends Phaser.Scene {
+export class Menu extends Phaser.Scene {
   constructor() {
-    super(SceneKey.GAME_OVER)
+    super(SceneKey.MENU)
   }
 
   create() {
     this.input.keyboard.on('keydown-SPACE', () => {
-      this.scene.start(SceneKey.MENU)
+      this.scene.start(SceneKey.LEVEL, { gameState: undefined })
     })
   }
 }

@@ -33,6 +33,6 @@ export class Preloader extends Phaser.Scene {
 
   create() {
     createAnimations(this)
-    this.scene.start(SceneKey.LEVEL)
+    this.scene.start(SceneKey.MENU)
   }
 }

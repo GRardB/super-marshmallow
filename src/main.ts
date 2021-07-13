@@ -1,6 +1,7 @@
 import Phaser from 'phaser'
 import { GameOver } from './scenes/GameOver'
 import { Level } from './scenes/Level'
+import { Menu } from './scenes/Menu'
 import { Preloader } from './scenes/Preloader'
 
 export default new Phaser.Game({
@@ -9,7 +10,7 @@ export default new Phaser.Game({
   backgroundColor: 0x141414,
   antialiasGL: false,
   pixelArt: true,
-  scene: [Preloader, Level, GameOver],
+  scene: [Preloader, Menu, Level, GameOver],
   banner: {
     hidePhaser: true,
   },
