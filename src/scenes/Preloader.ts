@@ -17,17 +17,12 @@ export class Preloader extends Phaser.Scene {
     )
 
     this.load.tilemapTiledJSON(ResourceKey.LEVEL_1, '/maps/level-1.json')
+    this.load.tilemapTiledJSON(ResourceKey.LEVEL_2, '/maps/level-2.json')
 
     this.load.atlas(
       ResourceKey.ENTITIES,
       '/img/spritesheets/entities.png',
       '/img/spritesheets/entities.json',
-    )
-
-    this.load.atlas(
-      ResourceKey.KEYS,
-      '/img/spritesheets/keys.png',
-      '/img/spritesheets/keys.json',
     )
   }
 

@@ -7,6 +7,14 @@ export class GameOver extends Phaser.Scene {
   }
 
   create() {
+    this.add.dom(
+      this.scale.width * 0.5,
+      this.scale.height * 0.5,
+      'div',
+      '',
+      'Game over. Press SPACE to continue',
+    )
+
     this.input.keyboard.on('keydown-SPACE', () => {
       this.scene.start(SceneKey.MENU)
     })

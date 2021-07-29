@@ -6,10 +6,10 @@ import { isOffScreen } from '../../../lib/util'
 import { Killable } from '../../Killable'
 import { AtlasFrames } from '../../../globals/AtlasFrames'
 import { LayerOrder } from '../../../globals/LayerOrder'
+import { Direction } from '../../../types/Direction'
 
 const JUMP_SPEED = 100
 const WALK_SPEED = 2 * MAP_TILE_SIZE
-const MOVEMENT_INTERVAL = 3 * 1000
 const SCORE_VALUE = 70
 
 export class Cactus extends Phaser.GameObjects.Container implements Killable {
@@ -38,8 +38,14 @@ export class Cactus extends Phaser.GameObjects.Container implements Killable {
   }
 
   preUpdate() {
-    if (this.isDead() && isOffScreen(this)) {
-      this.destroy()
+    if (this.isDead()) {
+      if (isOffScreen(this)) {
+        this.destroy()
+      }
+    } else if (this.body.blocked.left) {
+      this.walk(Direction.RIGHT)
+    } else if (this.body.blocked.right) {
+      this.walk(Direction.LEFT)
     }
   }
 
@@ -71,19 +77,10 @@ export class Cactus extends Phaser.GameObjects.Container implements Killable {
       .setSize(this.sprite.width, this.sprite.height)
   }
 
-  private walk = () => {
-    if (this.isDead()) return
-
-    this.sprite.setFlipX(Math.random() > 0.5)
-
-    const direction = this.sprite.flipX ? 1 : -1
-
-    this.body.setVelocityX(direction * WALK_SPEED)
-
-    this.scene.time.addEvent({
-      delay: MOVEMENT_INTERVAL,
-      callback: this.walk,
-    })
+  private walk = (direction: Direction) => {
+    const isWalkingRight = direction === Direction.RIGHT
+    this.sprite.setFlipX(isWalkingRight)
+    this.body.setVelocityX(isWalkingRight ? WALK_SPEED : -WALK_SPEED)
   }
 
   private isDead = () => this.health === 0

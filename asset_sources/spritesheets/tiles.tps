@@ -291,6 +291,9 @@
             <key type="filename">sprites/tiles/bin-compost.png</key>
             <key type="filename">sprites/tiles/bin-landfill.png</key>
             <key type="filename">sprites/tiles/bin-recycling.png</key>
+            <key type="filename">sprites/tiles/block-concrete-1.png</key>
+            <key type="filename">sprites/tiles/block-concrete-2.png</key>
+            <key type="filename">sprites/tiles/block-concrete-3.png</key>
             <key type="filename">sprites/tiles/block-ice-large.png</key>
             <key type="filename">sprites/tiles/block-ice-small.png</key>
             <key type="filename">sprites/tiles/block-metal.png</key>
@@ -413,7 +416,6 @@
                 <false/>
             </struct>
             <key type="filename">sprites/tiles/bins.png</key>
-            <key type="filename">sprites/tiles/block-concrete.png</key>
             <key type="filename">sprites/tiles/fence-1.png</key>
             <key type="filename">sprites/tiles/fence-2.png</key>
             <key type="filename">sprites/tiles/fence-summer.png</key>
@@ -831,7 +833,6 @@
         </map>
         <key>fileList</key>
         <array>
-            <filename>sprites/tiles/block-concrete.png</filename>
             <filename>sprites/tiles/block-ice-large.png</filename>
             <filename>sprites/tiles/block-ice-small.png</filename>
             <filename>sprites/tiles/block-metal.png</filename>
@@ -1058,6 +1059,9 @@
             <filename>sprites/tiles/window-curtains-red.png</filename>
             <filename>sprites/tiles/work-desk-left.png</filename>
             <filename>sprites/tiles/work-desk-right.png</filename>
+            <filename>sprites/tiles/block-concrete-1.png</filename>
+            <filename>sprites/tiles/block-concrete-2.png</filename>
+            <filename>sprites/tiles/block-concrete-3.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

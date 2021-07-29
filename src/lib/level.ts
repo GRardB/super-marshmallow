@@ -1,6 +1,6 @@
 import Phaser from 'phaser'
 import { ResourceKey } from '../globals/ResourceKeys'
-import { groupBy } from '../lib/util'
+import { getTiledProperty, groupBy } from '../lib/util'
 import { Coin } from '../entities/Coin'
 import {
   Cactus,
@@ -18,6 +18,8 @@ import { mapObjectTypeToFrame } from '../globals/AtlasFrames'
 import { Player } from '../entities/Player'
 import { ExtendedCursorKeys } from './input'
 import { MAP_TILE_SIZE } from '../globals/Map'
+import { createInteractivePlatform } from '../entities/platforms'
+import { createTrigger } from '../entities/triggers'
 
 const HUD_HEIGHT = MAP_TILE_SIZE
 const CAMERA_X_OFFSET_PERCENT = 0.1
@@ -31,10 +33,12 @@ enum MapKeys {
   GROUND = 'GROUND',
   BACKGROUND_PLATFORMS = 'BACKGROUND_PLATFORMS',
   WATER = 'WATER',
-  DECORATIONS_BACKGROUND = 'DECORATIONS_BACKGROUND',
+  DECORATIONS_BACKGROUND_1 = 'DECORATIONS_BACKGROUND_1',
+  DECORATIONS_BACKGROUND_2 = 'DECORATIONS_BACKGROUND_2',
   DECORATIONS_FOREGROUND = 'DECORATIONS_FOREGROUND',
   SPAWN_POINTS = 'SPAWN_POINTS',
   MISC = 'MISC',
+  TRIGGERS = 'TRIGGERS',
 
   // ENTITY OBJECT TYPES
   COINS = 'COINS',
@@ -54,14 +58,15 @@ enum MapKeys {
   COLLISION_PROPERTY = 'collides',
   ENEMY_LEDGE_COLLIDERS = 'ENEMY_LEDGE_COLLIDERS',
   BACKGROUND_PLATFORM_COLLIDERS = 'BACKGROUND_PLATFORM_COLLIDERS',
-  MOVABLE_PLATFORMS = 'MOVEABLE_PLATFORMS',
+  INTERACTIVE_PLATFORMS = 'INTERACTIVE_PLATFORMS',
 }
 
 export const setUpLevel = (
   scene: Phaser.Scene,
   cursorKeys: ExtendedCursorKeys,
+  mapKey: ResourceKey,
 ) => {
-  const { map, ground } = createMap(scene)
+  const { map, ground } = createMap(scene, mapKey)
 
   setBackground(scene, map.widthInPixels)
   scene.physics.world.setBounds(0, 0, map.widthInPixels, map.heightInPixels)
@@ -71,7 +76,7 @@ export const setUpLevel = (
   const cactusTops = scene.physics.add.group()
   const backgroundPlatforms = createBackgroundPlatforms(scene, map)
   const enemyLedgeColliders = createEnemyLedgeColliders(scene, map)
-  const moveablePlatforms = createMoveablePlatforms(scene, map)
+  const interactivePlatforms = createInteractivePlatforms(scene, map)
   const missiles = scene.physics.add.group()
   const cannonBalls = scene.physics.add.group()
   const enemies = createEnemies(scene, map, {
@@ -83,25 +88,27 @@ export const setUpLevel = (
   const coins = createCoins(scene, map)
   setUpCamera(scene, map, player)
   createMiscObjects(scene, map)
+  const triggers = createTriggers(scene, map)
 
   return {
-    cactusTops,
     backgroundPlatforms,
-    enemyLedgeColliders,
-    moveablePlatforms,
-    missiles,
+    cactusTops,
     cannonBalls,
-    enemies,
     coins,
+    enemies,
+    enemyLedgeColliders,
     ground,
-    player,
     map,
+    missiles,
+    interactivePlatforms,
+    player,
+    triggers,
   }
 }
 
-const createMap = (scene: Phaser.Scene) => {
+const createMap = (scene: Phaser.Scene, mapKey: ResourceKey) => {
   const map = scene.make.tilemap({
-    key: ResourceKey.LEVEL_1,
+    key: mapKey,
   })
 
   const tileset = map.addTilesetImage(
@@ -120,7 +127,11 @@ const createMap = (scene: Phaser.Scene) => {
     .setCollisionByProperty({ collides: true })
 
   map
-    .createLayer(MapKeys.DECORATIONS_BACKGROUND, tileset)
+    .createLayer(MapKeys.DECORATIONS_BACKGROUND_1, tileset)
+    .setDepth(LayerOrder.MAP_DECORATIONS_BACKGROUND)
+
+  map
+    .createLayer(MapKeys.DECORATIONS_BACKGROUND_2, tileset)
     .setDepth(LayerOrder.MAP_DECORATIONS_BACKGROUND)
 
   map
@@ -167,32 +178,26 @@ const createEnemyLedgeColliders = (
   return enemyLedgeColliders
 }
 
-const createMoveablePlatforms = (
+const createInteractivePlatforms = (
   scene: Phaser.Scene,
   map: Phaser.Tilemaps.Tilemap,
 ) => {
-  const moveablePlatforms = scene.physics.add
+  const interactivePlatforms = scene.physics.add
     .staticGroup(
       map
-        .getObjectLayer(MapKeys.MOVABLE_PLATFORMS)
-        .objects.map(({ x, y, type }) => {
-          return scene.add
-            .sprite(x, y, ResourceKey.MAP_TILES, mapObjectTypeToFrame(type))
-            .setOrigin(0, 1)
+        .getObjectLayer(MapKeys.INTERACTIVE_PLATFORMS)
+        .objects.filter(
+          ({ properties }) => !getTiledProperty(properties, 'isNoOp'),
+        )
+        .map(({ x, y, type, properties }) => {
+          return scene.add.existing(
+            createInteractivePlatform(scene, x, y, type, properties),
+          )
         }),
     )
-    .setDepth(LayerOrder.MAP_TILES)
+    .setDepth(LayerOrder.INTERACTIVE_PLATFORMS)
 
-  moveablePlatforms.children.each(
-    // @ts-ignore
-    (moveablePlatform: Phaser.Physics.Arcade.Sprite) => {
-      moveablePlatform.body
-        .setSize(moveablePlatform.width, 0.5 * moveablePlatform.height)
-        .setOffset(0, 0)
-    },
-  )
-
-  return moveablePlatforms
+  return interactivePlatforms
 }
 
 const setBackground = (scene: Phaser.Scene, width: number) => {
@@ -281,8 +286,9 @@ const createEnemies = (
       ),
     )
     .addMultiple(
-      (spawnPoints[MapKeys.FLYING_RADISH_SPAWN] || []).map(({ x, y }) =>
-        scene.add.existing(new FlyingRadish(scene, x, y)),
+      (spawnPoints[MapKeys.FLYING_RADISH_SPAWN] || []).map(
+        ({ x, y, properties }) =>
+          scene.add.existing(new FlyingRadish(scene, x, y, properties)),
       ),
     )
     .addMultiple(
@@ -311,21 +317,32 @@ const createCoins = (scene: Phaser.Scene, map: Phaser.Tilemaps.Tilemap) => {
     .setDepth(LayerOrder.COINS)
 }
 
-const createMiscObjects = (scene: Phaser.Scene, map: Phaser.Tilemaps.Tilemap) => {
-  map
-    .getObjectLayer(MapKeys.MISC)
-    .objects.forEach(({ x, y, text, type }) => {
-      if (text) {
-        const element = scene.add
-          .dom(x, y, 'p', null, text.text)
-          .setClassName('message')
-        element.setPosition(x + 0.5 * element.width, y + 0.5 * element.height)
-      } else {
-        scene.add
-          .image(x, y, ResourceKey.KEYS, mapObjectTypeToFrame(type))
-          .setDepth(LayerOrder.MISC)
-      }
-    })
+const createMiscObjects = (
+  scene: Phaser.Scene,
+  map: Phaser.Tilemaps.Tilemap,
+) => {
+  map.getObjectLayer(MapKeys.MISC).objects.forEach(({ x, y, type }) => {
+    scene.add
+      .image(x, y, ResourceKey.ENTITIES, mapObjectTypeToFrame(type))
+      .setDepth(LayerOrder.MISC)
+  })
+}
+
+const createTriggers = (scene: Phaser.Scene, map: Phaser.Tilemaps.Tilemap) => {
+  return scene.physics.add.staticGroup(
+    map
+      .getObjectLayer(MapKeys.TRIGGERS)
+      .objects.map(({ x, y, type, flippedHorizontal, properties }) => {
+        const trigger = scene.add.existing(
+          createTrigger(scene, x, y, type, properties),
+        )
+        trigger
+          .setFlipX(flippedHorizontal)
+          .setDepth(LayerOrder.MAP_DECORATIONS_BACKGROUND)
+
+        return trigger
+      }),
+  )
 }
 
 const setUpCamera = (

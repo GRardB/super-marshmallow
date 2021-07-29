@@ -5,7 +5,6 @@ import { ResourceKey } from '../../../globals/ResourceKeys'
 import { isOffScreen } from '../../../lib/util'
 import { Killable } from '../../Killable'
 
-const LUNGE_SPEED = 2 * MAP_TILE_SIZE
 const JUMP_SPEED = 150
 const SCORE_VALUE = 30
 
@@ -49,15 +48,7 @@ export class Daikon extends Phaser.GameObjects.Container implements Killable {
   }
 
   private jump = () => {
-    const direction = Phaser.Math.Between(-1, 1)
-
-    if (direction < 0) {
-      this.sprite.setFlipX(false)
-    } else if (direction > 0) {
-      this.sprite.setFlipX(true)
-    }
-
-    this.body.setVelocity(direction * LUNGE_SPEED, -JUMP_SPEED)
+    this.body.setVelocityY(-JUMP_SPEED)
   }
 
   private createSprite = () => {

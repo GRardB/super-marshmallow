@@ -1,3 +1,4 @@
+import Phaser from 'phaser'
 import { EventNames } from '../globals/EventNames'
 
 const SPAWN_AREA_PADDING = 20

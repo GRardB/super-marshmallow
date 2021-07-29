@@ -28,10 +28,7 @@ export class Squash extends Phaser.GameObjects.Container implements Killable {
 
     this.add(this.sprite)
 
-    this.scene.time.addEvent({
-      callback: this.changeDirection,
-      delay: WALK_TIME,
-    })
+    this.scene.time.delayedCall(WALK_TIME, this.changeDirection)
   }
 
   preUpdate() {
@@ -83,10 +80,10 @@ export class Squash extends Phaser.GameObjects.Container implements Killable {
       Direction.RIGHT,
     ])
 
-    this.scene.time.addEvent({
-      callback: this.changeDirection,
-      delay: this.direction === Direction.DOWN ? STAND_TIME : WALK_TIME,
-    })
+    this.scene.time.delayedCall(
+      this.direction === Direction.DOWN ? STAND_TIME : WALK_TIME,
+      this.changeDirection,
+    )
   }
 
   private createSprite = () => {

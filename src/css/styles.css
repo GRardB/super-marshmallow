@@ -1,4 +1,5 @@
 @import url(../ui/HUD/styles.css);
+@import url(../scenes/Dialogue/styles.css);
 
 @font-face {
   font-family: at01;
@@ -20,8 +21,4 @@
   image-rendering: -webkit-crisp-edges;
   image-rendering: pixelated;
   image-rendering: crisp-edges;
-}
-
-.message {
-  font-size: 14px;
 }

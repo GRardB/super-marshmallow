@@ -2,12 +2,15 @@ import Phaser from 'phaser'
 import { FlyingRadishAnimation } from './animations'
 import { MAP_TILE_SIZE } from '../../../globals/Map'
 import { ResourceKey } from '../../../globals/ResourceKeys'
-import { isOffScreen } from '../../../lib/util'
+import {
+  getTiledProperty,
+  isOffScreen,
+  TiledProperties,
+} from '../../../lib/util'
 import { Killable } from '../../Killable'
 
 const FLY_SPEED = 2 * MAP_TILE_SIZE
 const JUMP_SPEED = 150
-const FLY_DISTANCE = 6 * MAP_TILE_SIZE
 const SCORE_VALUE = 50
 
 export class FlyingRadish
@@ -19,7 +22,12 @@ export class FlyingRadish
   private tween: Phaser.Tweens.Tween
   private isDead = false
 
-  constructor(scene: Phaser.Scene, x: number, y: number) {
+  constructor(
+    scene: Phaser.Scene,
+    x: number,
+    y: number,
+    properties: TiledProperties,
+  ) {
     super(scene, x, y)
 
     this.sprite = this.createSprite()
@@ -29,7 +37,11 @@ export class FlyingRadish
 
     this.add(this.sprite)
 
-    this.tween = this.createAnimationTween()
+    const range = getTiledProperty(properties, 'range') * MAP_TILE_SIZE
+
+    if (range > 0) {
+      this.tween = this.createAnimationTween(range)
+    }
   }
 
   preUpdate() {
@@ -41,7 +53,7 @@ export class FlyingRadish
   public getScoreValue = () => SCORE_VALUE
 
   public die = () => {
-    this.tween.stop()
+    this.tween?.stop()
     this.isDead = true
     this.sprite.play(FlyingRadishAnimation.FLYING_RADISH_DIE, true)
     this.body.checkCollision.none = true
@@ -72,11 +84,11 @@ export class FlyingRadish
       .setSize(this.width, this.height * 0.6)
   }
 
-  private createAnimationTween = () => {
+  private createAnimationTween = (range: number) => {
     return this.scene.tweens.add({
       targets: this,
-      x: FLY_DISTANCE,
-      duration: (FLY_DISTANCE / FLY_SPEED) * 1000,
+      x: this.x - range,
+      duration: (range / FLY_SPEED) * 1000,
       ease: 'Linear',
       repeat: -1,
       yoyo: true,

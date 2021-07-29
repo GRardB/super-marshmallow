@@ -4,9 +4,7 @@ import { ExtendedCursorKeys } from '../../lib/input'
 import { PlayerAnimation } from './animations'
 import { PlayerState } from './state'
 
-export enum PlayerEvent {
-  DIE = 'DIE',
-}
+export { PlayerEvent } from './state'
 
 export class Player extends Phaser.GameObjects.Container {
   public body: Phaser.Physics.Arcade.Body
@@ -36,10 +34,6 @@ export class Player extends Phaser.GameObjects.Container {
   preUpdate(time: number, deltaTime: number) {
     this.playerState = this.playerState.handleInput(this.cursorKeys)
     this.playerState.update(time, deltaTime)
-  }
-
-  preDestroy() {
-    this.emit(PlayerEvent.DIE)
   }
 
   public setFlipX = (value: boolean) => {

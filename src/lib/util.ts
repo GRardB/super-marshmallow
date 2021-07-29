@@ -18,3 +18,13 @@ export const groupBy = <T>(xs: T[], key: string) => {
     return rv
   }, {})
 }
+
+interface TiledProperty {
+  name: string
+  value: any
+}
+export type TiledProperties = TiledProperty[]
+
+export const getTiledProperty = (properties: TiledProperty[], name: string) => {
+  return properties.find((tiledProperty) => tiledProperty.name === name)?.value
+}

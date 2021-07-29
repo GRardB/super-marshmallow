@@ -10,7 +10,8 @@ import { Tank } from '../entities/enemies/Tank'
 import { handlePlayerTankHeadCollision } from './player-tank-head'
 import { handleMissilePlayerCollision } from './missile-player'
 import { handleCannonBallPlayerCollision } from './cannon-ball-player'
-import { handleMoveablePlatformPlayerCollision } from './moveable-platform-player'
+import { handleInteractivePlatformPlayerCollision } from './interactive-platform-player'
+import { handlePlayerTriggerCollision } from './player-trigger'
 import { Squash } from '../entities/enemies'
 import { GameState } from '../globals/GameState'
 import { handlePlayerOutOfBounds } from './bounds-player'
@@ -26,16 +27,17 @@ interface CollidableGameObjects {
   gameState: GameState
   ground: Phaser.Tilemaps.TilemapLayer
   missiles: Phaser.Physics.Arcade.Group
-  moveablePlatforms: Phaser.Physics.Arcade.StaticGroup
+  interactivePlatforms: Phaser.Physics.Arcade.StaticGroup
   player: Player
+  triggers: Phaser.Physics.Arcade.StaticGroup
 }
 
 export const createColliders = (
   scene: Phaser.Scene,
   {
     backgroundPlatforms,
-    cannonBalls,
     cactusTops,
+    cannonBalls,
     coins,
     despawnZone,
     enemies,
@@ -43,8 +45,9 @@ export const createColliders = (
     gameState,
     ground,
     missiles,
-    moveablePlatforms,
+    interactivePlatforms,
     player,
+    triggers,
   }: CollidableGameObjects,
 ) => {
   scene.physics.add.collider(enemies, ground)
@@ -55,12 +58,11 @@ export const createColliders = (
   scene.physics.add.collider(enemies, backgroundPlatforms)
   scene.physics.add.collider(player, backgroundPlatforms)
 
-  scene.physics.add.collider(enemies, moveablePlatforms)
+  scene.physics.add.collider(enemies, interactivePlatforms)
   scene.physics.add.collider(
     player,
-    moveablePlatforms,
-    // @ts-ignore
-    handleMoveablePlatformPlayerCollision.bind(null, gameState, enemies),
+    interactivePlatforms,
+    handleInteractivePlatformPlayerCollision.bind(null, gameState, enemies),
   )
 
   scene.physics.add.collider(
@@ -73,25 +75,35 @@ export const createColliders = (
   // @ts-ignore
   scene.physics.add.collider(missiles, player, handleMissilePlayerCollision)
 
-  // @ts-ignore
   scene.physics.add.overlap(
     coins,
     player,
     handleCoinPlayerCollision.bind(null, gameState),
   )
 
-  // @ts-ignore
   scene.physics.add.overlap(
     enemies,
     player,
     handleEnemyPlayerCollision.bind(null, gameState),
   )
 
-  scene.physics.world.on('worldbounds', (body, _up, down, _left, _right) => {
-    if (body === player.body) {
-      handlePlayerOutOfBounds(gameState, player, down)
-    }
-  })
+  // @ts-ignore
+  scene.physics.add.overlap(player, triggers, handlePlayerTriggerCollision)
+
+  scene.physics.world.on(
+    'worldbounds',
+    (
+      body: Phaser.Physics.Arcade.Body,
+      _up: boolean,
+      down: boolean,
+      _left: boolean,
+      _right: boolean,
+    ) => {
+      if (body === player.body) {
+        handlePlayerOutOfBounds(gameState, player, down)
+      }
+    },
+  )
 
   const tanks = scene.add.group(
     enemies.getChildren().filter((enemy) => enemy instanceof Tank),

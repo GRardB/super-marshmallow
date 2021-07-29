@@ -10,6 +10,10 @@ const RUN_SPEED = 2 * WALK_SPEED
 const JUMP_SPEED = 200
 const BOUNCE_SPEED = 0.5 * JUMP_SPEED
 
+export enum PlayerEvent {
+  DIE = 'DIE',
+}
+
 export abstract class PlayerState {
   protected player: Player
   protected forceState: () => PlayerState
@@ -304,6 +308,7 @@ class PlayerDead extends PlayerState {
 
   public update() {
     if (isOffScreen(this.player)) {
+      this.player.emit(PlayerEvent.DIE)
       this.player.destroy()
     }
   }

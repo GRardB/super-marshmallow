@@ -1,5 +1,6 @@
 export enum SceneKey {
-  MENU = 'MENU',
-  LEVEL = 'LEVEL',
+  DIALOGUE = 'DIALOGUE',
   GAME_OVER = 'GAME_OVER',
+  LEVEL = 'LEVEL',
+  MENU = 'MENU',
 }

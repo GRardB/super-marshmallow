@@ -115,23 +115,65 @@
 					}
 				},
 				{
-					"filename": "block-concrete.png",
+					"filename": "block-concrete-1.png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 48,
+						"w": 16,
 						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 48,
+						"w": 16,
 						"h": 16
 					},
 					"frame": {
 						"x": 128,
 						"y": 0,
-						"w": 48,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "block-concrete-2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 144,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "block-concrete-3.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 160,
+						"y": 0,
+						"w": 16,
 						"h": 16
 					}
 				},
@@ -4782,6 +4824,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:d1332769d4ac2d30eb0a7befbea7ac3a:807ebc9d22e8263082b2d72266a1a7a8:accbe1e7e294ded8391337fc1c446319$"
+		"smartupdate": "$TexturePacker:SmartUpdate:cb8850d9241ec5ae691b3c15dc062cb5:b79a0b26a074602012d8da2d7d5faaf3:accbe1e7e294ded8391337fc1c446319$"
 	}
 }

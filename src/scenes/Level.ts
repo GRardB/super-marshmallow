@@ -7,58 +7,60 @@ import { createSpawner } from '../lib/spawner'
 import { GameState, GameStateEvent } from '../globals/GameState'
 import { HUD } from '../ui/HUD'
 import { setUpLevel } from '../lib/level'
+import { ResourceKey } from '../globals/ResourceKeys'
+import { EventNames } from '../globals/EventNames'
+import { getNextMap } from '../lib/maps'
 
 const DESPAWN_ZONE_MARGIN = 20
 
 interface LevelConfig {
   gameState: GameState | null
-  level: number
+  mapKey: ResourceKey
 }
 
 export class Level extends Phaser.Scene {
-  private map: Phaser.Tilemaps.Tilemap
   private cursorKeys: ExtendedCursorKeys
   private player: Player
   private despawnZone: Phaser.Physics.Arcade.StaticGroup
   private spawnEnemiesInRange: () => void
   private gameState: GameState
-  private hud: HUD
+  private mapKey: ResourceKey
 
   constructor() {
     super(SceneKey.LEVEL)
   }
 
-  init({ gameState, level = 1 }: LevelConfig) {
-    this.gameState = gameState || new GameState()
+  init({ gameState, mapKey = ResourceKey.LEVEL_1 }: LevelConfig) {
+    this.gameState = gameState?.removeAllListeners() || new GameState()
+    this.mapKey = mapKey
   }
 
   create() {
-    this.hud = this.createHUD()
+    this.createHUD()
 
     this.cursorKeys = createCursorKeys(this)
 
     const {
       backgroundPlatforms,
-      cannonBalls,
       cactusTops,
+      cannonBalls,
       coins,
       enemies,
-      map,
       enemyLedgeColliders,
       ground,
       missiles,
-      moveablePlatforms,
+      interactivePlatforms,
       player,
-    } = setUpLevel(this, this.cursorKeys)
+      triggers,
+    } = setUpLevel(this, this.cursorKeys, this.mapKey)
 
-    this.map = map
     this.player = player
     this.despawnZone = this.createDespawnZone()
 
     createColliders(this, {
       backgroundPlatforms,
-      cannonBalls,
       cactusTops,
+      cannonBalls,
       coins,
       despawnZone: this.despawnZone,
       enemies,
@@ -66,13 +68,15 @@ export class Level extends Phaser.Scene {
       gameState: this.gameState,
       ground,
       missiles,
-      moveablePlatforms,
+      interactivePlatforms,
       player: this.player,
+      triggers,
     })
 
     this.spawnEnemiesInRange = createSpawner(this, enemies)
 
     this.player.on(PlayerEvent.DIE, this.restartLevel)
+    this.events.once(EventNames.LEVEL_COMPLETE, this.proceedToNextLevel)
   }
 
   update() {
@@ -81,17 +85,19 @@ export class Level extends Phaser.Scene {
   }
 
   private restartLevel = () => {
-    this.gameState.off(GameStateEvent.COINS_UPDATE, this.hud.updateCoins)
-    this.gameState.off(GameStateEvent.LIVES_UPDATE, this.hud.updateLives)
-    this.gameState.off(GameStateEvent.SCORE_UPDATE, this.hud.updateScore)
-    this.gameState.off(GameStateEvent.TIME_UPDATE, this.hud.updateTime)
     this.time.removeAllEvents()
 
     if (this.gameState.getNumLives() > 0) {
-      this.scene.restart({ gameState: this.gameState })
+      this.scene.restart({ gameState: this.gameState, mapKey: this.mapKey })
     } else {
       this.scene.start(SceneKey.GAME_OVER)
     }
+  }
+
+  private proceedToNextLevel = () => {
+    this.scene.restart({
+      mapKey: getNextMap(this.mapKey),
+    })
   }
 
   private updateDespawnZonePosition = () => {
@@ -115,8 +121,6 @@ export class Level extends Phaser.Scene {
       delay: 1000,
       repeat: -1,
     })
-
-    return hud
   }
 
   private createDespawnZone = () => {

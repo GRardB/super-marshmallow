@@ -625,6 +625,7 @@
             </struct>
             <key type="filename">sprites/entities/radish-jumping-die.png</key>
             <key type="filename">sprites/entities/radish-stand.png</key>
+            <key type="filename">sprites/entities/sign.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,1</point_f>
@@ -651,21 +652,6 @@
                 <rect>4,3,7,7</rect>
                 <key>scale9Paddings</key>
                 <rect>4,3,7,7</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
-            <key type="filename">sprites/entities/sign.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>spriteScale</key>
-                <double>1</double>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>4,4,7,7</rect>
-                <key>scale9Paddings</key>
-                <rect>4,4,7,7</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
@@ -731,6 +717,56 @@
                 <rect>7,7,14,13</rect>
                 <key>scale9Paddings</key>
                 <rect>7,7,14,13</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">sprites/ui/keys/keys-10.png</key>
+            <key type="filename">sprites/ui/keys/keys-16.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0,1</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>6,2,11,4</rect>
+                <key>scale9Paddings</key>
+                <rect>6,2,11,4</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">sprites/ui/keys/keys-21.png</key>
+            <key type="filename">sprites/ui/keys/keys-22.png</key>
+            <key type="filename">sprites/ui/keys/keys-23.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0,1</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>2,2,3,4</rect>
+                <key>scale9Paddings</key>
+                <rect>2,2,3,4</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">sprites/ui/keys/keys-42.png</key>
+            <key type="filename">sprites/ui/keys/keys-45.png</key>
+            <key type="filename">sprites/ui/keys/keys-64.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0,1</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>2,2,5,4</rect>
+                <key>scale9Paddings</key>
+                <rect>2,2,5,4</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
@@ -940,13 +976,23 @@
             <filename>sprites/entities/woman-walk-1.png</filename>
             <filename>sprites/entities/woman-walk-2.png</filename>
             <filename>sprites/entities/woman-walk-3.png</filename>
+            <filename>sprites/ui/keys/keys-10.png</filename>
+            <filename>sprites/ui/keys/keys-16.png</filename>
+            <filename>sprites/ui/keys/keys-21.png</filename>
+            <filename>sprites/ui/keys/keys-22.png</filename>
+            <filename>sprites/ui/keys/keys-23.png</filename>
+            <filename>sprites/ui/keys/keys-42.png</filename>
+            <filename>sprites/ui/keys/keys-45.png</filename>
+            <filename>sprites/ui/keys/keys-64.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
         <key>replaceList</key>
         <array/>
         <key>ignoredWarnings</key>
-        <array/>
+        <array>
+            <string>phaser3-exporter-beta</string>
+        </array>
         <key>commonDivisorX</key>
         <uint>1</uint>
         <key>commonDivisorY</key>
